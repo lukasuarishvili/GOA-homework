@@ -5,7 +5,7 @@ if num>10:
     int(input("what's the number? "))
 
 else:
-    print("good job ")
+   print("good job ")
 
 #task2
 num=int(input("give me ann odd number? "))
@@ -44,4 +44,25 @@ if num1%5==0 or num1%10==0:
     print("good job")
 
 else:  print("bad job")
+
+#task7
+number=11
+animal=input("whats you're favorite animal? ")
+food=input("whats you're favorite food? ")
+drink=input("whats you're favorite drink? ")
+hobby=input("whats you're favorits hobby? ")
+
+list={number , animal , food, drink, hobby }
+
+for elements in list:
+    print(elements)
+
+#task8 ?
+
+#number={9,5,94,711,52,96,71,8}
+
+#for element in number:
+   # print(element)
+    #if element
+
     
