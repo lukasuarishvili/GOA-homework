@@ -9,17 +9,26 @@ for i in range(len(arr)):
    if  arr[i]%3==0 and arr[i]%5==0:
       i="good"
       print(i)
-   else:
+else:
     print(arr[i])
        
 #task3
 
 arr=[1 , 4 ,"h" , 7 , "j" , 6 ,"r" ]
 
-for i in range(len(arr)):
-    
-    string=arr[i]
-print(string)
- 
-       
+print(str(arr))
+  
+#task4
+arr="#######"
+
+for i in range(4):
+    print(" "*i+arr)
+  
+#task5
+
+age=int(input("how old are you? "))
+
+if age>12 :  print("შენ არ ხარ 12 წლის")  
+
+else:print  ("შენ ხარ თორმრტი წლის ან ნაკლები ")
 
