@@ -1,0 +1,13 @@
+body{
+ background-color: bisque;
+}
+.center{  
+     text-align: start;
+}
+.right{
+    text-align: right;
+
+}
+.left{
+    text-align:left;
+}
