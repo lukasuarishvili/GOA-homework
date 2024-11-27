@@ -13,4 +13,8 @@ text = "Hello, world! Welcome to the world!"
 new_text = text.replace("world", "universe")
 print(new_text)
 
-#task4
+#task5
+t1=input("word one? ")
+arr=[""]
+result=t1.join(arr)
+print(result)
