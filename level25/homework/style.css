@@ -2,6 +2,27 @@
 h1 {
     text-align: center;
     background-color: antiquewhite;
+    color: #599c1e;
 }
  
+body{
+    background-color: antiquewhite;
+}
+.t1{
+    text-align: center;
+    background-color: antiquewhite;
+    color: #599c1e;
+    
+}
+
+.h2{
+    color: #599c1e;   
+}
+.f1{
+    text-align: center;
+    color: #599c1e;
+}
+.img1{
+   align-content: center;
+}
 
