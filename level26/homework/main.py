@@ -1,22 +1,31 @@
-#task4 
-def print_patterns():
-    for _ in range(120):
-      
+#task4
+def patterns ():
+    for i in range(120):
+        print("******")
         print("******")
         print("******")
         print("******")
 
-        print("     *")
-        print("    ***")
-        print("  *******")
+    for i in range(120):
+        print("     *     ")
+        print("    ***    ")
+        print("  *******   ")
         print("***********")
-        print("     *")
-        print("     *")
+        print("     *    ")
+        print("     *    ")
 
-      
+    for i in range(120):
         print("*******")
         print(" *******")
-        print("  ********")
-        print("    ********")
+        print("  *******")
+        print("   *******")
 
-print_patterns()
+patterns()
+     
+#task1 
+def func():
+    for i in range(120):
+        print("     *     ")
+        print("    ***    ")
+        print("  *******   ")
+        print("***********")
