@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(54, 50, 45);
+}
+
+
+
+header{
+    background-color: rgb(54, 50, 45);
+    text-align: center;
+    color: azure;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(54, 50, 45);
+    text-align: center;
+    padding: 10px 0;
+    color: bisque;
+}
+
+footer{
+    background-color: aqua;
+
+    text-align: center;
+    color: aliceblue;
+    width: 100%;
+}
