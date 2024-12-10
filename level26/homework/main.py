@@ -23,9 +23,19 @@ def patterns ():
 patterns()
      
 #task1 
-def func():
-    for i in range(120):
-        print("     *     ")
-        print("    ***    ")
-        print("  *******   ")
-        print("***********")
+
+from turtle import *
+def tringle():
+   begin_fill
+   
+   fd(100)
+   left(120)
+   fd(100)
+   left(120)
+   fd(120)
+
+   
+   
+   exitonclick
+
+tringle()
