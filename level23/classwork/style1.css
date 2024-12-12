@@ -1,13 +1,16 @@
-body{
- background-color: bisque;
+body {
+    background-color: bisque;
 }
-.center{  
-     text-align: start;
+
+.center {
+    text-align: start;
 }
-.right{
+
+.right {
     text-align: right;
 
 }
-.left{
-    text-align:left;
+
+.left {
+    text-align: left;
 }

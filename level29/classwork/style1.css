@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "kata";
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+    font-family: "lomi";
+    src:url(./fonts/Playwrite_TZ_Guides/PlaywriteTZGuides-Regular.ttf)
+}
+
+.f1 {
+    font-family: "kata", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+main{
+    font-family: "lomi", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.h1{
+    align-self: center;
+    font-family: "lomi", cursive;
+    font-weight: 600;
+    font-style: normal;
+
+}
