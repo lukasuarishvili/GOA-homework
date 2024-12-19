@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "lomi";
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+}
+
+.h1{
+    color: blue;
+    font-family: "lomi";
+    border: 10px solid blue;
+    padding: 50px 60px 60px 70px ;
+    margin: 50px 60px 60px 70px; 
+    text-align: center;
+}
