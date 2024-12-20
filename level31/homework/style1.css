@@ -1,0 +1,19 @@
+*{
+
+}
+.h1{
+    text-align: center;
+}
+header{
+    background-color:rgb(212, 139, 50);
+}
+nav{
+    color: black;
+}
+body{
+    background-color: bisque;
+}
+.body{
+background-color: aqua;
+text-align: center;
+}
