@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "lomi";
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+.title {
+    margin: 0 auto;
+    font-family: "lomi";
+    font-weight: 1000;
+    font-size: 50px;
+    text-align: center;
+    background-color:antiquewhite;
+    height: 155px;
+    width: 400px;
+    padding-top: px;
+    border: solid;
+    border-radius: 10px;
+    border-color: rgb(255, 94, 14);
+    border-width: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.img_logo{
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-image: url(images/channels4_profile.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 180px ;
+    height: 180px;
+   
+    
+}
+
+
+
+
+.nav1{
+    margin: 0 auto;
+    text-align: center;
+    border: solid;
+    border-color:rgb(255, 94, 14) ;
+    border-radius:10px ;
+    border-width: 10px;
+    width: 12%;
+    height: 70px;
+    padding-top: 11px;
+    background-image: s;
+    font-family: "lomi";
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+    float: left;
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+
+main {
+    margin: 0 auto;
+    background-image: url(.//images/the-bank-of-georgia-headquarters_6.jpg);
+    border:solid;
+    border-top-width: 38px;
+    border-left-width: 35px;
+    border-right-width: 35px ;
+    border-bottom-width: 35px; ;
+    border-radius: 10px  ;
+    width:89%;
+    height: 850px;
+    border-color: rgb(255, 94, 14);
+    padding: 10px 10px 10px 10px;
+    margin-top: 120px;
+
+}
+
+.text {
+    font-family: "lomi";
+    font-weight: 800;
+    color: rgb(234, 238, 224);
+    font-size: 30px;
+    margin-top: px;
+
+}
+
+html{
+    background-color:antiquewhite;
+}
+
+
+.copyright {
+    margin: 0 auto;
+    text-align: center;
+    padding: top 20px;
+    font-size: 30px;
+    font-family: "lomi";
+    font-weight: 900;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    color: rgb(255, 94, 14);
+}
+
