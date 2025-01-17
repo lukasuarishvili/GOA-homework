@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+ul {
+    list-style-type: square; /* Changes the bullet to squares */
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: upper-roman; /* Uses Roman numerals for ordered lists */
+    padding-left: 20px;
+}
+
+.custom-list li {
+    list-style-type: none; /* Removes bullets or numbers */
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.custom-list li:before {
+    content: "★ "; /* Adds a custom decoration before each item */
+    color: gold;
+}
