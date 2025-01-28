@@ -48,21 +48,21 @@ p {
 
 
 table {
+    border-collapse: collapse;
     margin: 0 auto;
     width: 40%;
 }
 
 tr {
-
     border-color: aliceblue;
 }
 
-table,
-th,
+
 td {
     border-collapse: collapse;
     text-align: start;
-    padding: 5px;
+    padding: 3px;
+    
 }
 
 th {
