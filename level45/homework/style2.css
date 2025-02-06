@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+.conteiner{
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    gap: 30px;
+    height: 95vh;
+    width: 95%;
+    background-color: rgb(230, 230, 230);
+    border: solid;
+    border-color: rgb(179, 179, 179);
+}
+
+.box{
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(101, 168, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(46, 80, 131);
+}
