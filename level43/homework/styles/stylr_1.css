@@ -1,0 +1,40 @@
+body {
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+
+}
+
+.real_conteiner {
+    margin: 10vh;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.conteiner {
+    height: 60vh;
+    width: 45vh;
+    background-color: white;
+    border-radius: 12px;
+    font-family: sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    padding: 20px;
+}
+
+.conteiner h3 {
+    font-size: 1.7em;
+    font-weight: 700;
+    text-align: center;
+    color:  #333;
+}
+
+.conteiner p {
+    margin-top: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    color: #333;
+}
