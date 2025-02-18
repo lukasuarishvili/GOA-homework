@@ -7,7 +7,7 @@
 body {
     display: flex;
     height: 200vh;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     gap: 30px;
     align-content: flex-start;
     justify-content: start;
