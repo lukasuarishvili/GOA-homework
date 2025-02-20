@@ -1,0 +1,39 @@
+body{
+    height: 200vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.conteiner{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    align-content: start;
+    flex-wrap: wrap;
+    
+    
+}
+
+.box {
+    border: 3px solid;
+    width:  150px;
+    height: 150px;
+    background-color: rgb(22, 110, 78);
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px 3px;
+}
+.box_1{
+    border: 3px solid;
+    width:  190px;
+    height: 150px;
+    background-color: rgb(22, 110, 78);
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px 3px;
+}
+
