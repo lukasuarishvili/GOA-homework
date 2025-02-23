@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'incosolata-Reg';
+    src: url('./../assets/fonts/static/Inconsolata-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'incosolata-Bold';
+    src: url('./../assets/fonts/static/Inconsolata-Bold.ttf');
+}
+
+
+body {
+    font-family: "incosolata-Reg";
+    background-image: url(./../assets/images/background-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: aliceblue;
+}
+
+.header {
+
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    color: azure;
+}
+
+.log_conteriner {
+    height: 68vh;
+    width: 26%;
+    background-color: transparent
+}
+
+.header p {
+    color: aliceblue;
+    font-family: 'incosolata-Bold';
+    font-size: 20px;
+
+}
+
+.title h1 {
+    font-family: 'incosolata-Bold';
+    color: aliceblue;
+    font-size: 39px;
+    font-weight: 800;
+}
+
+.title p {
+    font-family: 'incosolata-Reg';
+    color: hsl(245, 15%, 58%);
+    font-size: 15px;
+    padding-top: 7px;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.file label {
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    
+    
+}
+
+.file input {
+    width: 100%;
+    height: 100px;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    border: 2px dashed #0e1422;
+    border-radius: 4px;
+    background-color:  hsl(245, 15%, 58%);
+    resize: none;
+    
+}
+.file  p{
+    color: hsl(245, 15%, 58%);
+    padding-top: 4px;
+    font-size: 14px;
+}
+
