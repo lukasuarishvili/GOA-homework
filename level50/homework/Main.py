@@ -49,3 +49,12 @@ def bmi(weight, height):
         return "Overweight"
     else:
         return "Obese"
+
+
+def grow(arr):    
+    
+    mult = 1    
+    for i in arr:       
+     mult *= i    
+    return multprint(grow([2, 2, 2, 2, 2, 2]))# task 8print("-------------TASK-8-------------")def printer_error(s):    c = 'abcdefghijklm'    return f"{len([i for i in s if i not in c])}/{len(s)}"print(printer_error('aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz'))# task 9print("-------------TASK-9-------------")def dna_to_rna(dna):    return dna.replace('T', 'U')print(dna_to_rna("GCAT"))# task 10print("-------------TASK-10-------------")def bmi
+
