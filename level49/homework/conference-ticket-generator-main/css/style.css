@@ -81,8 +81,7 @@ form {
     font-size: 15px;
     font-weight: 800;
     color: rgb(255, 255, 255);
-    
-    
+
 }
 
 .file input {
@@ -92,13 +91,13 @@ form {
     box-sizing: border-box;
     border: 2px dashed #0e1422;
     border-radius: 4px;
-    background-color:  hsl(245, 15%, 58%);
+    background-color: hsl(245, 15%, 58%);
     resize: none;
-    
+
 }
-.file  p{
+
+.file p {
     color: hsl(245, 15%, 58%);
     padding-top: 4px;
     font-size: 14px;
 }
-
