@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    head----section
+  </head>
+  <body class="background-img">
+    <div class="main-container inconsolata-regular text-neutral-0 align-center flex flex-col ">
+      <header>
+        <nav>
+          <img src="./assets/images/logo-full.svg" alt="Website full logo" />
+        </nav>
+      </header>
+      <main class="flex flex-col align-center">
+        <h1 class="inconsolata-bold text-center text-lg w-text">Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <h2 class="text-neutral-300">Secure your spot at next year's biggest coding conference.</h2>
+        <form class="flex flex-col">
+          <label for="u1"> Upload Avatar</label>
+          <!-- ? upload  container-->
+          <!-- ! upload value -->
+          <div>
+            <input type="file" name="upload" id="u1" />
+            <img
+              src="./assets/images/icon-upload.svg"
+              alt="Upload image logo"
+            />
+            <p>Drag and drop or click to upload</p>
+          </div>
+
+          <!-- ? იმისათვის რომ ელემენტეი გვერდი გვერდ დავსვათ ერთ კონტეინერში მოვათავსოთ -->
+          <!-- ! display: flex -->
+          <div>
+            <img src="./assets/images/icon-info.svg" alt="Info Icon" />
+            <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+          </div>
+
+          <!-- ! input value -->
+          <label for="n1">Full Name</label>
+          <input type="text" name="name" id="n1" />
+
+          <label for="e1">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="e1"
+            placeholder="example@email.com"
+          />
+
+          <label for="n2">GitHub Username</label>
+          <input
+            type="text"
+            name="github"
+            id="n2"
+            placeholder=" @yourusername"
+          />
+
+          <button type="submit">Generate My Ticket</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
+```

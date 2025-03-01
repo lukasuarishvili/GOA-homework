@@ -1,0 +1,147 @@
+
+@font-face {
+  font-family: "Inconsolata-Bold";
+  src: url("../assets/fonts/static/Inconsolata-Bold.ttf");
+}
+@font-face {
+  font-family: "Inconsolata-ExtraBold";
+  src: url("../assets/fonts/static/Inconsolata-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Inconsolata-Medium";
+  src: url("../assets/fonts/static/Inconsolata-Medium.ttf");
+}
+@font-face {
+  font-family: "Inconsolata-Regular";
+  src: url("../assets/fonts/static/Inconsolata-Regular.ttf");
+}
+/* ! util classes */
+/* ? fonts */
+.inconsolata-bold {
+  font-family: "Inconsolata-Bold";
+}
+.inconsolata-extra-bold {
+  font-family: "Inconsolata-ExtraBold";
+}
+.inconsolata-medium {
+  font-family: "Inconsolata-Medium";
+}
+.inconsolata-regular {
+  font-family: "Inconsolata-Regular";
+}
+
+/* ! colors */
+/* ? text colors */
+.text-neutral-0 {
+  color: hsl(0, 0%, 100%);
+}
+.text-neutral-300 {
+  color: hsl(252, 6%, 83%);
+}
+.text-neutral-500 {
+  color: hsl(245, 15%, 58%);
+}
+.text-neutral-700 {
+  color: hsl(245, 19%, 35%);
+}
+.text-neutral-900 {
+  color: hsl(248, 70%, 10%);
+}
+.text-orange-500 {
+  color: hsl(7, 88%, 67%);
+}
+.text-orange-700 {
+  color: hsl(7, 71%, 60%);
+}
+
+/* ? background colors */
+.bg-neutral-0 {
+  background-color: hsl(0, 0%, 100%);
+}
+.bg-neutral-300 {
+  background-color: hsl(252, 6%, 83%);
+}
+.bg-neutral-500 {
+  background-color: hsl(245, 15%, 58%);
+}
+.bg-neutral-700 {
+  background-color: hsl(245, 19%, 35%);
+}
+.bg-neutral-900 {
+  background-color: hsl(248, 70%, 10%);
+}
+.bg-orange-500 {
+  background-color: hsl(7, 88%, 67%);
+}
+.bg-orange-700 {
+  background-color: hsl(7, 71%, 60%);
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! არ ვიცით საეთ აქვს მიმართულება linear!
+*/
+.linear {
+    background-image: linear-gradient(
+      to right,
+      hsl(7, 86%, 67%),
+      hsl(0, 0%, 100%)
+    );
+  }
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  
+  /* ხშირად გაოყენებადი კლასები */
+  /* todo: flex section */
+  .flex {
+    display: flex;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .align-center{
+      align-items: center;
+  }
+  .justify-center{
+      justify-content: center;
+  }
+  
+  
+  /* todo: text section */
+  
+  .text-center{
+      text-align: center;
+  }
+  
+  /* todo: text size section */
+  .text-lg{
+      font-size: 60px;
+  }
+  
+  /* todo: width section */
+  .w-text{
+      max-width: 820px;
+  }
+  
+  .background-img {
+      /*  !! აუცილებალდ სჭირდება */
+      height: 100vh;
+    /*               ხაზები, წრე, კლაკნილი,  წრე   მეორე კლაკნილი     ფონი   */
+    background-size: cover, 10%,  25%,       10%,     40%,               cover;
+    /*                   აღარ ამეორებს სურათებს    */
+    background-repeat: no-repeat;
+  
+    /*                 ხაზები,   წრე,    კლაკნილი      წრე         მეორე კლანილი ხაზი    ფონი   */
+    background-position: 0,   4vw -10vh, right 10vh,  70vw 50vh,  0 bottom;
+  
+    /*                              ხაზები*/
+    background-image: url("../assets/images/pattern-lines.svg"),
+      /*                              წრე*/
+        url("../assets/images/pattern-circle.svg"),
+      /*                                  კლაკნილი */
+        url("../assets/images/pattern-squiggly-line-top.svg"),
+         /*                              წრე*/
+         url("../assets/images/pattern-circle.svg"),
+          /* მეორე კალნილი ხაზი */
+         url("../assets/images/pattern-squiggly-line-bottom-desktop.svg"),
+      /*                            ფონი*/
+        url("../assets/images/background-desktop.png");
+  }
