@@ -22,4 +22,63 @@
 }
 
 
-BG
+body{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color:hsl(216, 12%, 8%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color:hsl(219, 17%, 16%); 
+    width: 45vh;
+    height: 45vh;
+    border-radius:18px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.img_cont{
+    height: 20px;
+}
+
+.box h1{
+    font-weight: 700;
+    font-size: 23px;
+    color: aliceblue;
+    
+}
+
+p{
+    color: aliceblue;
+    
+}
+
+.button_cont{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button_cont button{
+    border: transparent;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: 292e37;
+
+}
+
+
+
+
+
+
