@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+ /*! fonts */ 
+.font-Montserrat-light{
+    font-family:"Montserrat";
+    font-weight:500;
+}
+
+.font-Montserrat-bold{
+    font-family:"Montserrat";
+    font-weight:700;
+}
+
+.font-Fraunces{
+    font-family: "Fraunces";
+    font-weight:700;
+}
+
+.font-p-small{
+    font-size: 12px;
+}
+
+.font-p-medium{
+    font-size: 15px;
+    
+}
+.font-p-large{
+    font-size: 24px;
+}
+
+.font-h1{
+    font-size: 29px;
+}
+
+.font-color{
+    color: hsl(228, 12%, 48%);
+}
+
+.font-color-light{
+    color: white;
+}
+
+.font-letter{
+    letter-spacing: 2px;
+}
+
+.font-line{
+    line-height: 20px;
+}
+
+.font-decoration{
+    text-decoration: line-through;
+}
+/* Primary fonts */
+
+.font-Primary-light{
+    color: hsl(158, 36%, 37%);
+}
+
+
+
+/* background colors */
+
+.bg-Cream{
+    background-color: hsl(30, 29%, 92%);
+}
+
+.bg-white{
+    background-color: hsl(0, 0%, 100%);
+}
+.bg-Black{
+    background-color: hsl(212, 21%, 14%);
+}
+.bg-Grey{
+    background-color: hsl(228, 12%, 48%);
+}
+.bg-green{
+    background-color: hsl(158, 36%, 37%);
+}
+
+/* flexbox */
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.item-center{
+    align-items: center;
+}
+
+
+
+.flex-row {
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+/* heights */
+.h-screen{
+    height: 100vh;
+}
+
+
+
+/* widths */
+
+
+
+
+
+/* size */
+
+.size-primary{
+    width: 70vh ;
+    height: 55vh  ;
+}
+
+
+
+.size-sec{
+    width: 35vh;
+    height: 55vh;
+
+}
+
+.image-size{
+    height: 55vh;
+    width: 35vh;
+    border-radius: 8px 0px  0px 8px; 
+}
+
+.button-size{
+    width: 100%;
+    height: 35px;
+}
+
+
+
+
+
+/* border-radius */
+
+.border{
+    border-radius: 8px;
+}
+
+.border-no-solid{
+    border:none
+}
+
+
+/* padding */
+
+.p-20{
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
