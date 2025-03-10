@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+/* background colors */
+
+.bg-Slate-light{
+    background-color: hsl(212, 45%, 89%);
+}
+
+.bg-white{
+    background-color: hsl(0, 0%, 100%);
+}
+.bg-Slate-medium{
+    background-color: hsl(216, 15%, 48%);
+}
+.bg-Slate-dark{
+    background-color:hsl(218, 44%, 22%);
+}
+
+
+/* flexbox */
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.item-center{
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+/* heights */
+.h-screen{
+    height: 100vh;
+}
+
+/* size */
+
+.size-primary{
+    width: 37vh ;
+    height: 60vh  ;
+}
+.image-size{
+    height: 37vh;
+    width: 35vh;
+    border-radius:8px; 
+}
+ /*! fonts */ 
+.font-outfit{
+    font-family:"outfit";
+    font-weight:400;
+}
+.font-p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.font-h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* colors  */ 
+
+.p-grey{
+    color: hsl(231, 4%, 68%);
+}
+
+.h1-dark{
+    color: hsl(218, 44%, 22%);
+}
+
+/* border-radius */
+
+.border-8{
+    border-radius: 8px;
+}
+
+.border-12{
+    border-radius: 12px;
+}
+
+/* padding */
+
+.p-10{
+    padding: 10px;
+}
+
+.margin-top{
+    margin-top: -25px;
+}
+
+
+
