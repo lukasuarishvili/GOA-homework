@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Fonts */
+.Manrope-light{
+    font-family: "Manrope";
+    font-weight: 500;
+}
+
+.Manrope-dark{
+    font-family: "Manrope";
+    font-weight: 700;
+}
+
+
+.font-p{
+    font-size: 15px;
+}
+.font-h1{
+    font-size: 20px;
+}
+.font-grey{
+    color: hsl(214, 17%, 51%);
+}
+.font-dark-grey{
+    color: hsl(217, 19%, 35%);
+}
+
+/* heights */
+.h-screen{
+    height: 100vh;
+}
+
+/* size */
+
+.size-div-primary{
+    width: 110vh ;
+    height: 40vh ;
+}
+
+.size-div-sec{
+    height: 40vh;
+    width: 40vh;
+}
+
+
+.image-size-1{
+    height: 100%;
+    width: 100%;
+    border-radius:8px 0 0 8px  ; 
+}
+
+.image-size-2{
+    height: 25px;
+    width: 25px;
+    border-radius:50%; 
+}
+
+.size-div-3{
+    height: 40vh;
+    width: 70vh;
+}
+
+.size-div-3-1{
+    height: 50%;
+    width: 100%;
+}
+.size-div-3-2{
+    height: 50%;
+    width: 100%;
+}
+
+/* background colors */
+
+.bg-Grayish-Blue{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.bg-Dark-Blue{
+    background-color: hsl(214, 17%, 51%);
+}
+.bg-Grayish-Blue{
+    background-color: hsl(212, 23%, 69%);
+}
+.bg-Light-Grayish{
+    background-color: hsl(210, 46%, 95%);
+}
+.bg-white{
+    background-color: white;
+}
+
+
+
+/* flexbox */
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-evenly{
+    justify-content:space-evenly;
+}
+.item-center{
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+/* colors  */ 
+
+.p-grey{
+    color: hsl(231, 4%, 68%);
+}
+
+.h1-dark{
+    color: hsl(218, 44%, 22%);
+}
+
+/* border-radius */
+
+.border-8{
+    border-radius: 8px;
+}
+
+.border-12{
+    border-radius: 12px;
+}
+
+/* padding */
+
+.padding-20{
+   padding:  20px;
+}
+
+.margin{
+    margin: 25px;
+}
+
+
+
