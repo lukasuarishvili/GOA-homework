@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* background colors */
+
+.bg-Slate-Violet{
+    background-color: hsl(257, 40%, 49%);
+}
+
+.bg-white{
+    background-color: hsl(0, 0%, 100%);
+}
+.bg-Soft_Magenta{
+    background-color:hsl(300, 69%, 71%);
+}
+
+.bg-image{
+    background-image: image();
+}
+
+/* flexbox */
+
+.flex{
+    display: flex;
+}
+.flex-start{
+    align-self: start;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.item-center{
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+/* heights */
+.h-screen{
+    height: 100vh;
+}
+
+/* size */
+
+.size-header{
+    width: 100%;
+    height: 10vh;
+}
+.size-Main{
+    width: 80%;
+    height: 70vh;
+}
+.size-footer{
+    width: 100%;
+    height: 5vh;
+}
+.size-primary{
+    width: 37vh ;
+    height: 60vh  ;
+}
+.image-size-small{
+    height: 10vh;
+    width: 35vh;
+    border-radius:8px; 
+}
+
+.div-imge_cont{
+    width: 65%;
+    height: 85%;
+}
+.div-text_cont{
+    width: 50% ;
+    height: 60%
+}
+
+.image-size-bigg{
+    height: 100%;
+    width: 100%;
+    border-radius:8px; 
+}
+ /*! fonts */ 
+.font-Poppins-4{
+    font-family:"Poppins";
+    font-weight:400;
+}
+
+.font-Poppins-6{
+    font-family:"Poppins";
+    font-weight:600;
+}
+
+.font-OpenSans{
+    font-family:"Open Sans";
+    font-weight:400;
+}
+.font-p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.font-h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* colors  */ 
+
+.p-Violet{
+    color: hsl(257, 40%, 49%);
+}
+.p-white{
+    color: white;
+}
+
+
+
+/* border-radius */
+
+.border-8{
+    border-radius: 8px;
+}
+
+.border-12{
+    border-radius: 12px;
+}
+
+/* padding */
+
+.p-50{
+    padding: 50px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-top-20{
+    padding-top: 20px;
+}
+
+.margin-top{
+    margin-top: -25px;
+}
+
+
+
