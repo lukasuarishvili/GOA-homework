@@ -1,0 +1,26 @@
+body{
+    background-color: blue;
+    display: flex;
+    gap: 20px;
+    height: 560px;
+    
+}
+
+.box{
+    background-color: aqua;
+   
+    font-size: larger;
+    width: 140px;
+    height: 250px;
+    border: solid;
+}
+
+.box-9{
+    background-color: aqua;
+    align-self: self-end;
+    margin-left: -1300px;
+    font-size: larger;
+    width: 150px;
+    height: 250px;
+    border: solid;
+}
