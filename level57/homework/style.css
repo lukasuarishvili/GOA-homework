@@ -1,0 +1,19 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template:repeat(5 , 1fr) ;
+    
+}
+
+
+.box{
+    height: 100%;
+    width: 100%;
+    background-color: bisque;
+}
+
+
+.box-2{
+    grid-column-start: 2;
+    grid-column-end:4 ;
+}

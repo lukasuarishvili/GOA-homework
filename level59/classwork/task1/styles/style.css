@@ -1,0 +1,35 @@
+body{
+    background-color: hsl(226, 43%, 10%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.testimonial-grid{
+    width: 80%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows : repeat(2,1fr) ;
+    gap: 30px;
+}
+
+.grid-col-span2{
+    grid-column: span2;
+}
+
+.info-conteriner{
+    background-color: hsl(235, 46%, 20%);
+    height: 100%;
+    width: 100%;
+    
+}
+
+.p{
+    font-size:18px ;
+    color: aliceblue;
+    font-weight: 300;
+}
