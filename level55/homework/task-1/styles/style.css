@@ -1,0 +1,51 @@
+body{
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main-conteiner{
+    height: 70vh;
+    width: 45vh;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.img-conteiner{
+    max-height: 30%;
+    max-width: 100%;
+    
+}
+
+.info-conteiner{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.image{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
+header{
+    font-weight: 900;
+    font-size: 19px;
+    color: black;
+}
+
+.text-main{
+    font-size: 15px;
+    font-weight: 500;
+    
+}
