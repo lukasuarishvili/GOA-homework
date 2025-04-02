@@ -7,3 +7,5 @@ def count_arara(n):
         result = result[0:-1]
     return result
 
+nums=[x*2 for x in range(10)]
+print(nums)
