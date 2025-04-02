@@ -1,0 +1,68 @@
+body{
+    height: 100vh;
+    background-color: hsl(225, 89%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    height: 60vh;
+    width: 80vh;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+}
+
+.Results{
+    width: 45vh;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: hsl(247, 81%, 58%);
+    border-radius: 25px  ;
+    text-align: center;
+    padding: 25px;
+    font-family: 22px;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.Summary{
+    height: 100%;
+    width: 35vh;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+}
+
+.ball{
+
+    width: 20vh;
+    height: 20vh;
+    background-color: hsl(251, 62%, 48%);
+    border-radius:50% ;
+    text-align: center;
+    margin-left:8.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.h1{
+
+    color: white;
+    font-weight: 800;
+    font-size: 23px;
+}
+
+.p{
+    margin-top: 20px;
+}
