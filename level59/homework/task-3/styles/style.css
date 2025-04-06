@@ -1,0 +1,83 @@
+body {
+    background-color: azure;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main {
+    box-sizing: border-box;
+    background-color: transparent;
+    width: 80%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 20px;
+}
+.Main > div{
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+#danile{
+    
+    background-color: blueviolet;
+    grid-area:  1/ 1 /2 /3 ;
+}
+
+#john{
+    background-color: rgb(24, 52, 131);
+    grid-area: 1 /3 /2 /4 ;
+}
+
+#Jeanette{
+    background-color:aliceblue ;
+    grid-area: 2 / 1 / 2 /2 ;
+}
+
+#Patrick{
+    background-color: darkblue ;
+    grid-area: 2/2/3 /4 ;
+}
+
+#Kira{
+    background-color: aliceblue;
+    grid-area: 1/4 /3 /5 ;
+}
+
+
+.h2-light{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 650;
+    color: aliceblue;
+    line-height: 25x;
+}
+.h2-dark{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+    color: rgb(73, 73, 73);
+    line-height: 25x;
+}
+
+.h2-gray{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+    color: gray;
+    line-height: 25x;
+}
+
+
+p{
+    color: gray;
+}
