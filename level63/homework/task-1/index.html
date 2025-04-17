@@ -6,39 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
         * {
             margin: 0 auto;
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             min-height: 100vh;
             display: flex;
             flex-direction: row;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:  Arial, sans-serif ;
             color: white;
-            
+
+
         }
 
-        section{
-            width:33.3333333%;
+        section {
+            width: 33.3333333%;
             height: 100vh;
-            display:flex;
+            display: flex;
             justify-content: center;
             align-items: center;
         }
-        #purple{
+
+        #purple {
             background-color: blueviolet;
         }
-        #green{
+
+        #green {
             background-color: aquamarine;
         }
-        #blue{
+
+        #blue {
             background-color: blue;
         }
 
         /* this is the ball section */
-        #ball{
+        #ball {
             width: 20vh;
             height: 20vh;
             border-radius: 50%;
@@ -48,20 +54,29 @@
             justify-content: center;
             align-items: center;
             
-        }
-        #ball:hover{
-            animation-name: bounce;
-            animation-duration: 500ms;
+
         }
 
-        @keyframes bounce{
-            0% {transform: translateY(0);}
-            50% {transform: translateY(-50px);}
-            100% {transform: translateY(0);}
+        #ball:hover {
+            animation: bounce 500ms ease-in-out;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-50px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
         }
 
         /* this is the squere section */
-        #squere{
+        #squere {
             width: 20vh;
             height: 20vh;
             border-radius: 0;
@@ -72,15 +87,50 @@
             align-items: center;
         }
 
-          #rectangle{
+        #squere:active {
+            animation: rotate 500ms ease-in-out;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        /*this is the rectangle section*/
+        #rectangle {
             width: 30vh;
             height: 20vh;
-            border-radius: 10%;
+            border-radius: 5%;
             border: solid 2px black;
             background-color: cadetblue;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        #rectangle:active {
+            animation: scale 500ms ease-in-out;
+        }
+
+        @keyframes scale {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(2);
+            }
+
+            100%{
+                transform: scale(0);
+            }
+
         }
     </style>
 </head>

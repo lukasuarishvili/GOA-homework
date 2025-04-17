@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+body {
+    
+    font-family: sans-serif, Arial, ;
+    background-color: cadetblue;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.8rem;
+    padding: 0.8rem;
+}
+
+.card {
+
+    background-color: wheat;
+    height: 10rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .section {
+        grid-template-rows: repeat(2, 1fr);
+    }
+}

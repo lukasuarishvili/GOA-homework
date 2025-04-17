@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: white;
+            min-height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+        }
+
+        .card {
+            width: 40vh;
+            height: 55vh;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-image: linear-gradient(45deg, blue, blueviolet);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .card:active {
+            animation: change 700ms ease-in-out;
+
+        }
+
+        @keyframes change{
+            0%{
+                transform: scale(1);
+                background-image: linear-gradient(45deg, blue, blueviolet);
+            }
+
+
+            50%{
+                transform: scale(1.5);
+                background-image: linear-gradient(95deg, rgb(12, 12, 109), rgb(80, 13, 143));
+                
+            }
+            
+            75%{background-image: linear-gradient(3605deg, rgb(6, 21, 137), rgb(61, 19, 145));
+                
+            }
+
+            100%{
+                transform: scale(1);
+                background-image: linear-gradient(45deg, blue, blueviolet);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 2)შექმენით 1 card რომელიც ფერებს და ზომას შეიცვლის-->
+
+    <div class="card">
+        <h1>the main card</h1>
+    </div>
+
+</body>
+
+</html>
