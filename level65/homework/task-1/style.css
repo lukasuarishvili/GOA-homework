@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.outfit-uniquifier {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+  
+
+body{
+    background-color:  rgb(18, 26, 44);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 70vh;
+    width: 43vh;
+    background-color: rgb(28, 39, 61);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius:  8px;
+    box-shadow: 3px 3px 3px 3px;
+}
+
+.text{
+    color: rgb(117, 131, 158);
+    font-family: "Outfit";
+    font-size: 1.2rem;
+
+}
+
+/* main image*/
+.image-equilibri-conteiner{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 15px;
+}
+
+#equilibrium{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px ;
+}
+
+.image-equilibri-conteiner:hover {  
+    background-image: url(./images/icon-view.svg);
+}
+
+
+
+#h1:hover{
+    color: aqua;
+}
+
+/* avatar image */
+.avater-conteiner{
+    width: 30px;
+    height: 30px;
+    border: solid 1px white ;
+    border-radius: 50%;
+}
+
+#avatar{
+    height: 100%;
+    width: 100%;
+
+}
+
+
