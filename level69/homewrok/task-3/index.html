@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid ბარათები</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns:1fr 1fr;
+  }
+}
+@media (max-width:500px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+    <div class="card">Card 5</div>
+    <div class="card">Card 6</div>
+  </div>
+</body>
+</html>
