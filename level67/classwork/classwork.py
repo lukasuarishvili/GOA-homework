@@ -1,5 +1,19 @@
 from termcolor import *
 
+#task-1
+def two_sort(array):
+    array=sorted(array)
+    res=""
+    main=""
+    for i in array[0]:
+        res+=i+"***"
+    res=list(res)
+    
+    for i in res[0:-3]:
+        main+=i
+        
+    return main
+
 class Person:
     def __init__(self , name , surname , father_name):
         self.name = name
