@@ -1,0 +1,1 @@
+legit_card_name=["bog","tbs"]
