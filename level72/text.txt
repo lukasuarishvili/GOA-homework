@@ -1,0 +1,18 @@
+console.log("hello world");
+
+let name="arzen"
+console.log(name)
+
+const surname="muskia"
+//surname="tutashxia" არ შილება შეცვლა ამ ცვლადის რადგან const-ით აა და იმიუტუბლე ხდება
+// ერთხელ ქმნი და აღარ ცვლი
+
+console.log(surname)
+
+//         0           1          2 
+let list=["mushni" , "zarandia" ,"36"]
+list[0]="data" // განახლება ხდება ამის ანუ ინდექსინგ არის
+
+console.log(list)
+console.log(list[1], list[2]) // ესც ინდექსინგ არის 
+
