@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "kung-fu";
+    src: url(../fonts/KungFuPandaRegular-xYjV.ttf);
+
+}
+
+@font-face {
+    font-family: "hans";
+    src: url(../fonts/BlackHanSans-Regular.ttf);
+}
+
+@font-face {
+    font-family:"hanken";
+    src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+.defualt-font{
+    font-family: "hans" , sans-serif;
+}
+
+.good-font{
+    font-family: "hanken";
+}
+
