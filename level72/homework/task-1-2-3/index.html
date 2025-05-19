@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button{
+            background-color: brown;
+            border-radius: 14px;
+            height: 50px;
+            width: 100px;
+            font-weight: 600;
+            border: transparent;
+            font-family: sans-serif;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button type="button" onclick="myfunc()" id="Main-button">press</button>
+    </main>
+    
+    <script> 
+        let age=0
+
+        const name= "ficxela"
+        console.log(age)
+        console.log(name)
+
+        function myfunc(){
+            let bg = document.getElementById("Main-button")
+            return bg.style.backgroundColor = "blue"
+        }
+
+    </script>
+</body>
+</html>
