@@ -1,162 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>სიახლეების ლენტი - ჩემი სოციალური ქსელი</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        /* მარტივი ანიმაცია კომენტარის დასამატებლად */
-        .comment-added {
-            animation: fadeInOut 2s forwards;
-        }
-        @keyframes fadeInOut {
-            0% { opacity: 0; transform: translateY(10px); }
-            20% { opacity: 1; transform: translateY(0); }
-            80% { opacity: 1; transform: translateY(0); }
-            100% { opacity: 0; transform: translateY(-10px); }
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="/Tailwind/output.css">
 </head>
-<body class="bg-gray-100 text-gray-800 p-4">
-    <div class="container mx-auto">
-        <h1 class="text-4xl font-bold text-center text-blue-600 mb-8">სიახლეების ლენტი</h1>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<body class="min-h-screen  ">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
 
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="flex items-center mb-4">
-                    <img src="https://via.placeholder.com/40" alt="ავტორის ფოტო" class="w-10 h-10 rounded-full mr-3 border-2 border-blue-400">
-                    <span class="font-bold text-gray-900">მომხმარებელი1</span>
+
+                <div class="flex gap-2">
+                    <img src="../assets/images/mainlogoimage" alt="logo">
+                    <h1 class="text-2xl font-bold text-blue-600">Social Media</h1>
                 </div>
-                <img src="https://via.placeholder.com/400x250?text=ულამაზესი+ხედი" alt="პოსტის ფოტო" class="w-full h-auto rounded-lg mb-4">
-                <p class="text-gray-700 mb-4">ულამაზესი ხედი! დღეს ფანტასტიური ამინდი იყო მთაში. სუფთა ჰაერი და სიმშვიდე!</p>
-                <div class="flex items-center text-gray-500 text-sm mb-4">
-                    <span>15 ლაიქი</span>
-                    <span class="ml-4">
-                        <span id="post1-comment-count">2</span> კომენტარი
-                    </span>
+
+
+                <div class="w-full max-w-md mx-4 ">
+                    <input type="text" placeholder="Search  anithing... "
+                        class="px-4 py-2 font-medium text-gray-700 rounded-lg border  w-full">
                 </div>
-                <div class="border-t border-gray-200 pt-4">
-                    <div id="post1-comments" class="mb-3 space-y-2">
-                        <p class="text-gray-800"><span class="font-semibold text-blue-700">ანა:</span> რა ლამაზია! ძალიან მომინდა მანდ ყოფნა.</p>
-                        <p class="text-gray-800"><span class="font-semibold text-green-700">დათო:</span> სად გადაიღე? მართლა შთამბეჭდავია!</p>
-                    </div>
-                    <div class="flex mt-4">
-                        <input type="text" id="post1-comment-input" class="flex-grow shadow appearance-none border rounded-l py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="კომენტარის დაწერა...">
-                        <button onclick="addComment('post1')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r focus:outline-none focus:shadow-outline">
-                            გაგზავნა
-                        </button>
-                    </div>
-                    <div id="post1-feedback" class="text-green-500 text-sm mt-2 hidden"></div>
-                </div>
+
+
+                <nav class="flex gap-0.5 justify-center items-center md:gap-2  lg:gap-5">
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Settings</a>
+                    <a href="../FAKE_PAGES/login/log_in.html"
+                        class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Login</a>
+                </nav>
+
             </div>
+        </div>
+    </header>
+    <main class="w-full px-4 py-6 mt-2 mx-auto">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto ">
 
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="flex items-center mb-4">
-                    <img src="https://via.placeholder.com/40" alt="ავტორის ფოტო" class="w-10 h-10 rounded-full mr-3 border-2 border-purple-400">
-                    <span class="font-bold text-gray-900">გიორგი</span>
-                </div>
-                <div class="w-full bg-gray-300 h-48 rounded-lg flex items-center justify-center text-gray-600 mb-4 border border-gray-400">
-                    <span class="text-lg font-semibold">ვიდეო პლეისჰოლდერი</span>
-                </div>
-                <p class="text-gray-700 mb-4">დღის ვიდეო! მოკლე კლიპი ჩემი მოგზაურობიდან. იმედია მოგეწონებათ.</p>
-                <div class="flex items-center text-gray-500 text-sm mb-4">
-                    <span>28 ლაიქი</span>
-                    <span class="ml-4">
-                        <span id="post2-comment-count">1</span> კომენტარი
-                    </span>
-                </div>
-                <div class="border-t border-gray-200 pt-4">
-                    <div id="post2-comments" class="mb-3 space-y-2">
-                        <p class="text-gray-800"><span class="font-semibold text-red-700">სოფო:</span> ძალიან მომეწონა! სად გადაიღე ეს ვიდეო?</p>
+            <article
+                class="flex flex-col p-3 min-h-96 border border-black  bg-white rounded-lg shadow overflow-hidden ">
+                <div class="flex flex-row justify-start items-center gap-2 pb-1.5">
+                    <div>
+                        <img src="../assets/images/icons8-male-user-64.png" alt="logo" class="size-10">
                     </div>
-                    <div class="flex mt-4">
-                        <input type="text" id="post2-comment-input" class="flex-grow shadow appearance-none border rounded-l py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="კომენტარის დაწერა...">
-                        <button onclick="addComment('post2')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r focus:outline-none focus:shadow-outline">
-                            გაგზავნა
-                        </button>
+                    <div>
+                        <h3 class="text-2xl font-semibold font-serif">data tutashxia</h3>
+                        <h5 class="text-xl font-sans  -mt-1">abragi</h5>
                     </div>
-                    <div id="post2-feedback" class="text-green-500 text-sm mt-2 hidden"></div>
                 </div>
-            </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="flex items-center mb-4">
-                    <img src="https://via.placeholder.com/40" alt="ავტორის ფოტო" class="w-10 h-10 rounded-full mr-3 border-2 border-orange-400">
-                    <span class="font-bold text-gray-900">ლიკა</span>
+                <div class="bg-no-repeat bg-center bg-cover  h-56 "
+                    style="background-image: url(../assets/images/photo-1715356758153-6d58ae44e8fe.jpeg);">
                 </div>
-                <p class="text-gray-700 mb-4 text-lg font-medium">კარგ დღეს გისურვებთ ყველას! იმედია პროდუქტიული იქნება თქვენი დღე. ☀️</p>
-                <div class="flex items-center text-gray-500 text-sm mb-4">
-                    <span>10 ლაიქი</span>
-                    <span class="ml-4">
-                        <span id="post3-comment-count">0</span> კომენტარი
-                    </span>
+                <div class="flex flex-row gap-2 mt-1.5">
+                    <img src="../assets/images/icons8-heart-100.png" alt="heart" class="size-7">
+                    <img src="../assets/images/icons8-paper-plane-100.png" alt="like" class="size-7">
+                    <img src="../assets/images/icons8-share.svg" alt="plai" class="size-7">
                 </div>
-                <div class="border-t border-gray-200 pt-4">
-                    <div id="post3-comments" class="mb-3 space-y-2">
-                        </div>
-                    <div class="flex mt-4">
-                        <input type="text" id="post3-comment-input" class="flex-grow shadow appearance-none border rounded-l py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="კომენტარის დაწერა...">
-                        <button onclick="addComment('post3')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r focus:outline-none focus:shadow-outline">
-                            გაგზავნა
-                        </button>
+                <div class="font-sans font-medium pt-1.5">
+                    <p>good place to go hiding ,! </p>
+                    <p>a chil spot where youre dog cousin cant find you.</p>
+                </div>
+
+                <input type="text" name="" id="" placeholder="Write a comment..."
+                    class="mt-1.5 p-1.5 font-medium  text-gray-900">
+
+            </article>
+
+            <article
+                class="flex flex-col p-3 min-h-96 border border-black  bg-white rounded-lg shadow overflow-hidden ">
+                <div class="flex flex-row justify-start items-center gap-2 pb-1.5">
+                    <div>
+                        <img src="../assets/images/icons8-male-user-64.png" alt="logo" class="size-10">
                     </div>
-                    <div id="post3-feedback" class="text-green-500 text-sm mt-2 hidden"></div>
+                    <div>
+                        <h3 class="text-2xl font-semibold font-serif">fredric bonaparta</h3>
+                        <h5 class="text-xl font-sans  -mt-1">Film Critic </h5>
+                    </div>
                 </div>
-            </div>
+
+                <div class="bg-no-repeat bg-center bg-cover  h-56 "
+                    style="background-image: url(../assets/images/in_class_exersice.png);">
+                </div>
+                <div class="flex flex-row gap-2 mt-1.5">
+                    <img src="../assets/images/icons8-heart-100.png" alt="heart" class="size-7">
+                    <img src="../assets/images/icons8-paper-plane-100.png" alt="like" class="size-7">
+                    <img src="../assets/images/icons8-share.svg" alt="plai" class="size-7">
+                </div>
+                <div class="font-sans font-medium pt-1.5">
+                    <p>Found this cool mowies just now </p>
+                    <p>reccomend seeng them , there realy good and interesting </p>
+                </div>
+
+                <input type="text" name="" id="" placeholder="Write a comment..."
+                    class="mt-1.5 p-1.5 font-medium  text-gray-900">
+
+            </article>
+
+            <article
+                class="flex flex-col p-3 min-h-96 border border-black  bg-white rounded-lg shadow overflow-hidden ">
+                <div class="flex flex-row justify-start items-center gap-2 pb-1.5">
+                    <div>
+                        <img src="../assets/images/icons8-male-user-64.png" alt="logo" class="size-10">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold font-serif">jhon doe</h3>
+                        <h5 class="text-xl font-sans  -mt-1">Sites reviuer</h5>
+                    </div>
+                </div>
+
+                <div class="bg-no-repeat bg-center bg-cover  h-56 "
+                    style="background-image: url(../assets/images/images.jpeg);">
+                </div>
+                <div class="flex flex-row gap-2 mt-1.5">
+                    <img src="../assets/images/icons8-heart-100.png" alt="heart" class="size-7">
+                    <img src="../assets/images/icons8-paper-plane-100.png" alt="like" class="size-7">
+                    <img src="../assets/images/icons8-share.svg" alt="plai" class="size-7">
+                </div>
+                <div class="font-sans font-medium pt-1.5">
+                    <p>Nice place to visit </p>
+                    <p>would reccomend it 100%</p>
+                </div>
+
+                <input type="text" name="" id="" placeholder="Write a comment..."
+                    class="mt-1.5 p-1.5 font-medium  text-gray-900">
+
+            </article>
+
+            <article
+                class="flex flex-col p-3 min-h-96 border border-black  bg-white rounded-lg shadow overflow-hidden ">
+                <div class="flex flex-row justify-start items-center gap-2 pb-1.5">
+                    <div>
+                        <img src="../assets/images/icons8-male-user-64.png" alt="logo" class="size-10">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold font-serif">mate ruxadze</h3>
+                        <h5 class="text-xl font-sans  -mt-1">programer</h5>
+                    </div>
+                </div>
+
+                <div class="bg-no-repeat bg-center bg-cover  h-56 "
+                    style="background-image: url(..//assets/images/image-1-1-1210x700.webp);">
+                </div>
+                <div class="flex flex-row gap-2 mt-1.5">
+                    <img src="../assets/images/icons8-heart-100.png" alt="heart" class="size-7">
+                    <img src="../assets/images/icons8-paper-plane-100.png" alt="like" class="size-7">
+                    <img src="../assets/images/icons8-share.svg" alt="plai" class="size-7">
+                </div>
+                <div class="font-sans font-medium pt-1.5">
+                    <p>top ten languges to learn </p>
+                    <p>2025 edition , python on top.</p>
+                </div>
+
+                <input type="text" name="" id="" placeholder="Write a comment..."
+                    class="mt-1.5 p-1.5 font-medium  text-gray-900">
+
+            </article>
+
+            <article
+                class="flex flex-col p-3 min-h-96 border border-black  bg-white rounded-lg shadow overflow-hidden ">
+                <div class="flex flex-row justify-start items-center gap-2 pb-1.5">
+                    <div>
+                        <img src="../assets/images/icons8-male-user-64.png" alt="logo" class="size-10">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold font-serif">miles moralise</h3>
+                        <h5 class="text-xl font-sans  -mt-1">Footbal fan</h5>
+                    </div>
+                </div>
+
+                <div class="bg-no-repeat bg-center bg-cover  h-56 "
+                    style="background-image: url(../assets/images/kvaratskhelias-portemanteau-against-rennes-v0-9vkb3mg5mjne1.webp);">
+                </div>
+                <div class="flex flex-row gap-2 mt-1.5">
+                    <img src="../assets/images/icons8-heart-100.png" alt="heart" class="size-7">
+                    <img src="../assets/images/icons8-paper-plane-100.png" alt="like" class="size-7">
+                    <img src="../assets/images/icons8-share.svg" alt="plai" class="size-7">
+                </div>
+                <div class="font-sans font-medium pt-1.5">
+                    <p>kvara srikes agan ,! </p>
+                    <p>lest go psg .</p>
+                </div>
+
+                <input type="text" name="" id="" placeholder="Write a comment..."
+                    class="mt-1.5 p-1.5 font-medium  text-gray-900">
+
+            </article>
+
+            <article
+                class="flex flex-col p-3 min-h-96 border border-black  bg-white rounded-lg shadow overflow-hidden ">
+                <div class="flex flex-row justify-start items-center gap-2 pb-1.5">
+                    <div>
+                        <img src="../assets/images/icons8-male-user-64.png" alt="logo" class="size-10">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold font-serif">justin mane</h3>
+                        <h5 class="text-xl font-sans  -mt-1">networking men</h5>
+                    </div>
+                </div>
+
+                <div class="bg-no-repeat bg-center bg-cover  h-56 "
+                    style="background-image: url(../assets/images/png-clipart-somacro-45-300dpi-social-media-icons-messenger-generic-messenger-ball-icon-thumbnail.png);">
+                </div>
+                <div class="flex flex-row gap-2 mt-1.5">
+                    <img src="../assets/images/icons8-heart-100.png" alt="heart" class="size-7">
+                    <img src="../assets/images/icons8-paper-plane-100.png" alt="like" class="size-7">
+                    <img src="../assets/images/icons8-share.svg" alt="plai" class="size-7">
+                </div>
+                <div class="font-sans font-medium pt-1.5">
+                    <p>new sosial media app dropd,! </p>
+                    <p>its about fast networking and good cominication.</p>
+                </div>
+
+                <input type="text" name="" id="" placeholder="Write a comment..."
+                    class="mt-1.5 p-1.5 font-medium  text-gray-900">
+
+            </article>
+
+
 
         </div>
-    </div>
+    </main>
 
-    <script>
-        // მარტივი JavaScript ფუნქცია კომენტარების დასამატებლად
-        function addComment(postId) {
-            const inputElement = document.getElementById(`${postId}-comment-input`);
-            const commentsContainer = document.getElementById(`${postId}-comments`);
-            const commentCountElement = document.getElementById(`${postId}-comment-count`);
-            const feedbackElement = document.getElementById(`${postId}-feedback`);
-            const commentText = inputElement.value.trim();
-
-            if (commentText !== "") {
-                const newComment = document.createElement('p');
-                newComment.className = 'text-gray-800 comment-added'; // Add animation class
-                // აქ შეგიძლიათ დაამატოთ მომხმარებლის ფიქტიური სახელი
-                newComment.innerHTML = `<span class="font-semibold text-gray-900">თქვენ:</span> ${commentText}`;
-                commentsContainer.appendChild(newComment);
-
-                // განაახლეთ კომენტარების რაოდენობა
-                let currentCount = parseInt(commentCountElement.textContent);
-                commentCountElement.textContent = currentCount + 1;
-
-                // გამოვაჩინოთ უკუკავშირი
-                feedbackElement.textContent = "კომენტარი დაემატა!";
-                feedbackElement.classList.remove('hidden');
-                
-                // დამალვა 2 წამის შემდეგ
-                setTimeout(() => {
-                    feedbackElement.classList.add('hidden');
-                    // ამოვიღოთ ანიმაციის კლასი
-                    newComment.classList.remove('comment-added'); 
-                }, 2000); 
-
-                inputElement.value = ''; // ინფუთ ველის გასუფთავება
-            } else {
-                feedbackElement.textContent = "კომენტარი არ უნდა იყოს ცარიელი!";
-                feedbackElement.classList.remove('hidden');
-                feedbackElement.classList.remove('text-green-500');
-                feedbackElement.classList.add('text-red-500');
-
-                setTimeout(() => {
-                    feedbackElement.classList.add('hidden');
-                    feedbackElement.classList.remove('text-red-500');
-                    feedbackElement.classList.add('text-green-500');
-                }, 2000);
-            }
-        }
-    </script>
+    <footer class="bg-white border-t-2 border-gray-200 mt-4">
+        <div class="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+            &copy; 2025 by luka suarishvili. All rights reserved.
+        </div>
+    </footer>
 </body>
+
 </html>
