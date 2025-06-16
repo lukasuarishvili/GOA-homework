@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="/Tailwind/output.css">
 </head>
-<body class="min-h-screen flex flex-col justify-center items-center text-center gap-8  lg:flex-row lg:text-left lg:gap-16 bg-center bg-cover bg-no-repeat px-4 py-8"
-       style="background-image: url(/GROUPWORK-3/assets/images/ashish-kumar-senapati-bdGBRaWT0Gk-unsplash.jpg);">
+<!-- არის რესპონსიული და ეკრანის სიგრძის შეცვლისას იცვლება -->
+<!-- ორ მდგომარეობა აქ ერთი გაშლილ ანუ თუ მეტია 1024px-ზე და მეორე დაკეცილი თუ ნაკლებია -->
+
+<body
+    class="min-h-screen flex flex-col justify-center items-center text-center gap-8  lg:flex-row lg:text-left lg:gap-16 bg-center bg-cover bg-no-repeat px-4 py-8"
+    style="background-image: url(/GROUPWORK-3/assets/images/ashish-kumar-senapati-bdGBRaWT0Gk-unsplash.jpg);">
+
+    <!--პირველი სეცქია ტექსტით და ინფოთი-->
     <section class="w-full max-w-md  bg-transparent mt-0 lg:mt-0">
         <h1 class="  font-bold  text-4xl lg:font-extrabold lg:text-6xl lg:mb-[30px] text-white">Welcome!</h1>
 
         <p class="text-white text-xl mt-2 lg:mt-[-20px] font-sans">This is our new, innovative social media website.
-           It’s great to see you here! Now you will experience a unique, modern platform.
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            It’s great to see you here! Now you will experience a unique, modern platform.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
 
         <h3 class=" text-2xl lg:text-3xl text-white font-bold font-sans mt-[15px]">Follow us here:</h3>
         <ul class="flex gap-3 mt-[5px] justify-center lg:justify-start">
-            <a href=""><img src="/GROUPWORK-3/assets/images/icons8-facebook-48.png" alt="facebook" style="width: 30px; height: 30px;"></a>
-            <a href=""><img src="/GROUPWORK-3/assets/images/icons8-instagram-48.png" alt="insta" style="width: 30px; height: 30px;"></a>
-            <a href=""><img src="/GROUPWORK-3/assets/images/icons8-twitter-bird-48.png" alt="twiter" style="width: 30px; height: 30px;"></a>
-            <a href=""><img src="/GROUPWORK-3/assets/images/icons8-youtube-48.png" alt="youtube" style="width: 30px; height: 30px;"></a>
-            <a href=""><img src="/GROUPWORK-3/assets/images/icons8-google-48.png" alt="google" style="width: 30px; height: 30px;"></a>
+            <a href=""><img src="/GROUPWORK-3/assets/images/icons8-facebook-48.png" alt="facebook"
+                    style="width: 30px; height: 30px;"></a>
+            <a href=""><img src="/GROUPWORK-3/assets/images/icons8-instagram-48.png" alt="insta"
+                    style="width: 30px; height: 30px;"></a>
+            <a href=""><img src="/GROUPWORK-3/assets/images/icons8-twitter-bird-48.png" alt="twiter"
+                    style="width: 30px; height: 30px;"></a>
+            <a href=""><img src="/GROUPWORK-3/assets/images/icons8-youtube-48.png" alt="youtube"
+                    style="width: 30px; height: 30px;"></a>
+            <a href=""><img src="/GROUPWORK-3/assets/images/icons8-google-48.png" alt="google"
+                    style="width: 30px; height: 30px;"></a>
         </ul>
     </section>
-
+    <!--მეორე სექცია რეგისტრაციით -->
     <section class="w-full max-w-md  bg-transparent mt-5 lg:mt-0">
-    
+
 
         <div class="text-center w-full h-fit mb-2">
             <h1 class="font-bold  lg:font-extrabold  font-sans  text-3xl lg:text-4xl text-white">Signup Form</h1>
         </div>
 
         <form action="" class="font-bold  font-sans text-[16px] text-white  lg:mt-4 box-border">
-        <div class="flex  flex-col text-left  items-center lg:flex-row lg:items-start gap-3">
-            <div>
-                <label for="" class="pb-0.5">Name:</label><br>
-                <input type="text" placeholder="entert you're name">
+            <div class="flex  flex-col text-left  items-center lg:flex-row lg:items-start gap-3">
+                <div>
+                    <label for="" class="pb-0.5">Name:</label><br>
+                    <input type="text" placeholder="entert you're name">
+                </div>
+                <div class="mb-1.5">
+                    <label for="" class="pb-0.5">Surname:</label><br>
+                    <input type="text" placeholder="entert you're Surname">
+                </div>
             </div>
-            <div class="mb-1.5">
-                <label for="" class="pb-0.5">Surname:</label><br>
-                <input type="text" placeholder="entert you're Surname">
+            <label for="" class="  items-start lg:mt-2 ">Email Address</label><br>
+            <input type="email" placeholder="example@gmail.com"
+                class="lg:w-full  p-[4px]   text-gray-400 bg-transparent"><br>
+            <label for="" class="text-left">Password</label><br>
+            <input type="password" placeholder="YourPasswordHere"
+                class="lg:w-full  p-[4px]   text-gray-400 bg-transparent"><br>
+            <div class="flex lg:flex-row lg:justify-start  justify-center items-center mt-4 lg:text-xl text-xs">
+                <input type="checkbox" name="" id="" class="size-4">
+                <label for="" class="  text-[16px] ml-0.5">Remember me </label>
             </div>
-        </div>
-        <label for=""  class="  items-start lg:mt-2 ">Email Address</label><br>
-        <input type="email" placeholder="example@gmail.com" class="lg:w-full  p-[4px]   text-gray-400 bg-transparent"><br>
-        <label for="" class="text-left">Password</label><br>
-        <input type="password" placeholder="YourPasswordHere" class="lg:w-full  p-[4px]   text-gray-400 bg-transparent"><br>
-        <div class="flex lg:flex-row lg:justify-start  justify-center items-center mt-4 lg:text-xl text-xs">
-            <input type="checkbox" name="" id="" class="size-4"> 
-            <label for="" class="  text-[16px] ml-0.5">Remember me </label>
-        </div>
-        
 
-        <button type="submit" class= " w-[55%] lg:w-full  py-2 mt-4 rounded bg-white text-black text-[14px]" > <a href="../../NEWS_FEED/Main.html">Sign Up Now</a></button>
-        <div class="mt-4 text-center">
-        <p class="">Already have an account? <a href="../login/log_in.html" class="  ml-3.5 lg:ml-5 underline" >Log in</a></p>
-        </div>
+
+            <button type="submit" class=" w-[55%] lg:w-full  py-2 mt-4 rounded bg-white text-black text-[14px]"> <a
+                    href="../../NEWS_FEED/Main.html">Sign Up Now</a></button>
+            <div class="mt-4 text-center">
+                <p class="">Already have an account? <a href="../login/log_in.html"
+                        class="  ml-3.5 lg:ml-5 underline">Log in</a></p>
+            </div>
     </section>
 
 </body>
+
 </html>
