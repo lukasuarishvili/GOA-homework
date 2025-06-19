@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content-div">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+
+    <button id="remove-btn">Remove First Child</button>
+
+    <script>
+        const container = document.getElementById("content-div");
+        const button = document.getElementById("remove-btn");
+
+        button.addEventListener("click", () => {
+            if (container.firstChild) {
+                container.removeChild(container.firstChild);
+                alert("Child removed!");
+            } else {
+                alert("No more children to remove!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
