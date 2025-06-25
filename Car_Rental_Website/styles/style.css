@@ -1,33 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.max-w-set{
-    max-width: 1392px;
+.max-w-set {
+  max-width: 1392px;
 }
 
-.bg-purple-set{
-    background-color: #5937E0;
+.bg-purple-set {
+  background-color: #5937E0;
 }
 
+.text-purple-set {
+  color: #5937E0;
+}
+.text-gray{
+  color: #6C757D;
+}
+.bg-gray-set {
+  background-color: #FAFAFA;
+}
 
-.inter-font{
+.inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
 }
 
-.inter{
-    font-family: "Inter";
+.inter {
+  font-family: "Inter";
 }
 
-.work-sans-font{
+.work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
 }
 
-.work-sans{
-    font-family:"Work Sans" ;
+.work-sans {
+  font-family: "Work Sans";
 }
