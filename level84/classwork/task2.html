@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Tailwind/output.css">
+</head>
+
+<body class="h-screen bg-black text-2xl text-center font-sans text-white gap-4 flex flex-col justify-center">
+
+    <h1>year:</h1>
+    <h1 id="title"></h1>
+    <h1>Week day:</h1>
+    <h1 id="text"></h1>
+    <h1>month:</h1>
+    <h1 id="kkk"></h1>
+    <script>
+        /* 
+        4) შევქმანთ new Date obj და გამოვიტანოთ წელი, დღე და რიცხვი ასევე საათებიც ეს ყველაფერი კი საიტში ჩავაშენოთ და საიტში გამოჩნდეს ჩვენი აქამდე შექმნილი ინფორმაცია
+        */
+
+        let title = document.getElementById("title");
+        let text = document.getElementById("text");
+        let kkk = document.getElementById("kkk");
+
+        const date = new Date();
+        const day = date.getDay()
+        
+        console.log(date,)
+        const month= date.getMonth()
+        title.textContent = String(date)
+        text.textContent= String(day)
+        kkk.textContent = String(month)
+
+        setInterval
+        setTimeout
+        
+    </script>
+</body>
+
+</html>

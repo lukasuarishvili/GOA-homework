@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        Main:
+        while (true) {
+            let user_Info = +prompt("give me a number from 1-5:", "");
+
+            function check_user(user_Info) {
+                return typeof(user_Info) === "number" ? true : false;
+            }
+
+            if (check_user(user_Info)){
+                break Main;
+            } else {
+                alert("enter a number")
+                continue Main;
+            }
+
+            switch (user_Info) {
+                case 1:
+                    alert(`good job you chose ${user_Info}`)
+                    break
+                case 2:
+                    alert(`good job you chose ${user_Info}`)
+                    break
+                case 3:
+                    alert(`good job you chose ${user_Info}`)
+                    break
+
+                case 4:
+                    alert(`good job you chose ${user_Info}`)
+                    break
+
+                case 5:
+                    alert(`good job you chose ${user_Info}`)
+                    break
+
+            }
+        }
+    </script>
+</body>
+
+</html>
