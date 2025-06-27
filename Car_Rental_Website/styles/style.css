@@ -15,8 +15,13 @@
 .text-gray{
   color: #6C757D;
 }
+
 .bg-gray-set {
   background-color: #FAFAFA;
+}
+
+.bg-white-set{
+  background-color: #F9F9F9;
 }
 
 .inter-font {
