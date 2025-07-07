@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Tailwind/output.css">
+</head>
+<body class="h-screen w-full flex justify-center items-center bg-black">
+    <div class="h-96 w-80 flex flex-col gap-3.5 p-2.5 rounded-[12px] bg-blue-600 items-center">
+        <div class="max-w-full max-h-full bg-red-50">
+            <img src="./assets/photo-1506104489822-562ca25152fe.jpg" class="w-full  h-full ">
+        </div>
+        <div class="w-3/4 h-10 flex justify-between  ">
+            <button type="button" onclick="previousButton() " class="bg-gray-100 w-7 h-full px-4 font-bold flex justify-center items-center rounded-xl"> < </button>
+            <button type="button" onclick="nextButton()" class="bg-gray-100 w-7 h-full flex px-4 font-bold justify-center items-center rounded-xl"> > </button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
