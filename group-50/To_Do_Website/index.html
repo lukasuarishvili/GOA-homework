@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="/Tailwind/output.css" />
+</head>
+
+<body class="min-h-screen bg-gray-800 text-white flex items-center justify-center p-4">
+
+    <main class="w-full max-w-md bg-gray-800 rounded-2xl shadow-2xl p-6 space-y-6 border-gray-900 border-4">
+        <h1 class="text-4xl font-bold text-center text-purple-500">ToDo App</h1>
+
+        <div class="flex items-center gap-2">
+            <input type="text" id="item-text"
+                class="flex-1 px-4 py-3 rounded-lg border border-gray-600 text-gray-100 bg-gray-700 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                placeholder="Enter task..." />
+            <button id="add-item"
+                class="bg-purple-600 hover:bg-purple-700 px-5 py-3 rounded-lg text-white font-semibold transition duration-200">
+                Add
+            </button>
+        </div>
+        <div class="flex items-center gap-2 mt-2">
+            <button id="clear-items"
+                class="bg-red-600 hover:bg-red-700 px-5 py-3 rounded-lg text-white font-semibold transition duration-200">
+                Clear
+            </button>
+            <input type="text" id="filter-text"
+                class="flex-1 px-4 py-3 rounded-lg border border-gray-600 text-gray-100 bg-gray-700 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                placeholder="Filter tasks..." />
+            <button id="filter-btn"
+                class="bg-blue-600 hover:bg-blue-700 px-5 py-3 rounded-lg text-white font-semibold transition duration-200">
+                Filter
+            </button>
+        </div>
+
+
+        <ul id="todolist"
+            class="space-y-3 max-h-80 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
+            <li class="flex items-center justify-between bg-gray-700 text-white px-4 py-3 rounded-lg shadow-sm">
+                <p>🚀 Test Task: Lorem ipsum dolor sit </p>
+            </li>
+            
+        </ul>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
