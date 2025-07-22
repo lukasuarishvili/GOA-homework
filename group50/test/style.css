@@ -1,0 +1,47 @@
+/* pre set colors  */
+
+
+/*  Backgrouds   */
+.bg-Lightgreen-set {
+    background-color: #C4DCD3;
+}
+
+.bg-Whitegreen-set {
+    background-color: #DBEADD;
+}
+
+.bg-lightgray {
+    background-color: #D9D9D9;
+}
+
+.bg-whitepont-set {
+    background-color: #FFF1F1;
+}
+
+/* text colors */
+.text-green-set {
+    color: #0D5329;
+}
+
+.text-Darkgreen-set {
+    color: #34574A;
+}
+
+.text-gray-set {
+    color: #5B5B5B;
+}
+
+
+/* Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.josefin-sans {
+    font-family: "Josefin Sans";
+}
+
+.josefin-sans-font {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}

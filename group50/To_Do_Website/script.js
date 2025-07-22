@@ -3,6 +3,8 @@ let iteminput = document.getElementById("item-text");
 let addItemBtn = document.getElementById("add-item");
 let clear = document.getElementById("clear-items");
 let listElement = document.querySelector("ul");
+let filterBtn = document.getElementById("filter-btn");
+let filterText = document.getElementById("filter-text");
 
 let listItems = [];
 let userItems = [];
@@ -99,6 +101,30 @@ function createliitem(item) {
     return li;
 }
 
+function filteritem(task) {
+    if (typeof task == "object") {
+        return task.completed ? true : false
+    }
+}
+
+function filterTasks(tasks,) {
+    switch (tasks) {
+        case "completed":
+            for (let task of listItems) {
+                if (filteritem(task) === false) {
+                    const index = listItems.indexOf(task);
+                    if (index > -1) {
+                        listItems.splice(index, 1);
+                    }
+                    displayItems(listElement, listItems)
+                }
+            }
+    }
+
+
+}
+
+
 //clear button event listiner
 clear.addEventListener("click", () => {
     listElement.textContent = "";
@@ -109,6 +135,9 @@ clear.addEventListener("click", () => {
 
 // add buttons event listener
 addItemBtn.addEventListener("click", () => additem(iteminput))
+
+//filter button event listiner
+filterBtn.addEventListener("click", () => filterTasks(filterText))
 
 /* 
 when creating a task add a alert/input type thing make it preati and it askes if task is copmpleted or not also add a filter mechanizsm , fix the local storage and also give it an id 
