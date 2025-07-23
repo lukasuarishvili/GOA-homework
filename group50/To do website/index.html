@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do web</title>
+    <link rel="stylesheet" href="/Tailwind/output.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="min-h-screen flex flex-row  " data-page="all">
+    <section class="flex flex-col gap-3 w-[380px] bg-Whitegreen-set border-r-[2px] border-gray-400  pt-6 px-2 ">
+        <div class="flex  justify-start items-center gap-3 mb-4">
+            <img src="./assets/Icon.png" alt="main incon">
+            <h2 class="text-green-set josefin-sans text-[40px] ">TO-DO</h2>
+        </div>
+
+        <button class="flex  bg-lightgray  rounded-[10px]">
+            <a href="" class="flex justify-start items-center gap-4.5 px-3.5">
+                <img src="./assets/tasks.png" alt="task icon">
+                <h4 class="josefin-sans text-gray-set text-[28px]">tasks</h4>
+            </a>
+        </button>
+
+        <button class="flex  bg-Lightgreen-set  rounded-[10px]">
+            <a href="./pages/In progress.html" class="flex justify-start items-center gap-4.5 px-3.5">
+                <img src="./assets/Star.png" alt="Star icon">
+                <h4 class="josefin-sans text-gray-set text-[28px]">In progress</h4>
+            </a>
+        </button>
+
+        <button class="flex  bg-Lightgreen-set  rounded-[10px]">
+            <a href="./pages/completed.html" class="flex justify-start items-center gap-4.5 px-3.5 ">
+                <img src="./assets/bin.png" alt="BIN icon">
+                <h4 class="josefin-sans text-gray-set text-[28px]">completed</h4>
+            </a>
+        </button>
+
+
+
+        <div class="flex bg-Lightgreen-set rounded-[10px] justify-start items-center gap-4.5 px-3.5 py-2 ">
+            <button id="searchBtn"
+                class="  bg-green-200 hover:bg-green-500 transition delay-100 ease-linear text-white text-sm p-1 rounded-[5px] ">
+                <img src="./assets/search.svg" alt="search icon" class="h-[25px] w-[25px]" />
+            </button>
+
+
+            <h4 class="josefin-sans text-gray-set text-[28px]">Find task</h4>
+
+            <input type="text" id="idinput" placeholder="ID"
+                class="josefin-sans text-gray-set bg-whitepont-set border-[1px] border-gray-400 focus:border-2 focus:border-gray-500 px-2.5 py-1 w-[60px] rounded-[5px] ml-2" />
+
+
+        </div>
+
+
+
+        <button type="submit" id="add-task-btn"
+            class="flex  bg-Lightgreen-set  rounded-[10px]  justify-start items-center gap-4.5 px-3.5">
+            <img src="./assets/plus.svg" alt="PLUS icon" class="h-[25px] w-[25px]">
+            <h4 class="josefin-sans text-gray-set text-[28px]">add task</h4>
+        </button>
+
+
+
+    </section>
+    <main class="w-full min-h-full flex flex-col ">
+        <div class="h-[101px] bg-lightgray w-full">
+
+        </div>
+        <ul id="task-list" class="p-3.5 grid grid-cols-1 gap-2  md:grid-cols-2 lg:grid-cols-3">
+
+        </ul>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
