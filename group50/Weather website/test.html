@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Tailwind/output.css">
+    <link rel="stylesheet" href="./style.css">
+  
+</head>
+
+<body class="lg:min-h-screen h-screen lg:w-full flex flex-col md:flex-row lg:flex-row  ">
+
+    <main class="w-screen h-2/6 md-w-3/6 lg:w-4/6 md:h-screen lg:h-screen p-12 flex items-end justify-start">
+        <div class="roboto text-white flex h-fit items-center ">
+            <h2 id="city_temp" class="text-7xl mr-2.5"></h2>
+
+            <div class="flex flex-col items-end justify-between gap-1">
+                <h1 id="city_Title" class="text-6xl "></h1>
+                <h3 id="city_temp" class="text-6xl"></h3>
+               
+
+            </div>
+            <img src="./images/icons8-cloud-100.png" alt="" class="pl-3">
+        </div>
+    </main>
+    <section
+        class=" backdrop-blur-[7px]  border-white border-t-4 lg:border-l-4 md:border-t-0 md:border-l-4 lg:border-t- w-screen h-4/6 md:w-3/6 lg:w-2/6 md:h-screen lg:h-screen p-6">
+        <div class="flex w-full gap-4 border-b-[2px] pb-2 border-white ">
+            <input type="text" name="" id="city_input" placeholder="Search Location..." class="w-full text-2xl text-white focus:bg-transparent focus:border-none">
+            <button type="button" class="w-10 h-10 rounded-[5px] "><img src="./images/search.svg" alt="search"></button>
+        </div>
+        <h4 class="roboto text-white text-[18px] mt-4 ">Weather Details...</h4>
+        <div class="w-full flex justify-center items-center roboto text-white" id="temp_description">
+            
+        </div>
+        <div id="tempConteiner" class="flex flex-col w-full roboto text-white gap-4 mt-2.5">
+
+            
+        </div>
+
+
+    </section>
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>

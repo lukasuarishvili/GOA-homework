@@ -1,0 +1,22 @@
+"categories": [
+        {
+            "id": 0,
+            "name": "rodents",
+            "supercategory": "none"
+        },
+        {
+            "id": 1,
+            "name": "guinea pig",
+            "supercategory": "rodents"
+        },
+        {
+            "id": 2,
+            "name": "russian dwarf hamster",
+            "supercategory": "rodents"
+        },
+        {
+            "id": 3,
+            "name": "syrian hamster",
+            "supercategory": "rodents"
+        }
+    ],

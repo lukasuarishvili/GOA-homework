@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Tailwind/output.css">
+
+</head>
+
+
+<body class="bg-gray-950 min-h-screen text-white">
+
+    <!-- Header -->
+    <header class="bg-gray-900 px-4 py-3 flex items-center justify-between flex-wrap">
+
+        <!-- Logo -->
+        <div class="text-2xl font-bold">🎬 MovieZone</div>
+
+        <!-- Search Bar -->
+        <div class="w-full md:flex-1 md:mx-6 mt-3 md:mt-0">
+            <input type="text" placeholder="Search movies..."
+                class="w-full px-4 py-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center space-x-3 mt-3 md:mt-0">
+
+            <!-- Genres Dropdown -->
+            <div class="relative group">
+                <button class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-md">
+                    🎭 Genres
+                </button>
+
+
+                <div
+                    class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
+                    <button class="w-full text-left px-4 py-2 hover:bg-gray-100">Action</button>
+                    <button class="w-full text-left px-4 py-2 hover:bg-gray-100">Comedy</button>
+                    <button class="w-full text-left px-4 py-2 hover:bg-gray-100">Drama</button>
+                    <button class="w-full text-left px-4 py-2 hover:bg-gray-100">Horror</button>
+                </div>
+            </div>
+
+            <!-- Top IMDb Button -->
+            <button id="top-imdb"
+                class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 rounded-md">
+                ⭐ Top IMDb
+            </button>
+
+            <!-- Georgian Movies Button -->
+            <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-md">
+                🇬🇪 Georgian Movies
+            </button>
+        </div>
+    </header>
+    <main class="p-6">
+
+        <!-- Section Header -->
+        <h2 class="text-2xl text-center md:text-3xl font-bold text-white mb-8">
+            🔥 Popular This Week
+        </h2>
+
+        <!-- popular Row  -->
+        <div id="MovieRow"  class="flex gap-5 overflow-x-auto max-w-screen">
+
+        </div>
+
+        <!-- Main row -->
+        <section id="Main movies">
+
+        </section>
+        
+    </main>
+
+
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>

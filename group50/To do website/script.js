@@ -5,13 +5,6 @@ let addItemBtn = document.getElementById("add-item");
 const searchBtn = document.getElementById("searchBtn");
 let listElement = document.getElementById("task-list"); //this is the DOM-s Ul  
 const pageType = document.body.dataset.page;
-console.log(pageType);
-
-
-
-
-
-
 
 let listItems = [];
 let userItems = [];
@@ -154,7 +147,7 @@ function renderTask(task) {
     li.appendChild(title);
     li.appendChild(container);
 
-    // Clear and append to taskDisplay (acting like a <ul>)
+
     listElement.appendChild(li);
 }
 
@@ -165,3 +158,8 @@ searchBtn.addEventListener("click",()=>{
     idInput.value=""
 
 })
+
+// adding an add button whitch adds a new object to itemlist array
+// new tasks id will be the lenght of the arrays+1
+// you can type the title and it should be in progress aoutomaticli
+// adding to the item list array and creating an creating a task will be useed opon it

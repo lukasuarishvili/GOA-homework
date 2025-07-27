@@ -1,0 +1,18 @@
+{
+      adult: false,
+      backdrop_path: '/5esDYWV0NoFwqPa1iC0g9akqZo9.jpg',
+      id: 1151031,
+      title: 'Bring Her Back',
+      original_title: 'Bring Her Back',
+      overview: 'Following the death of their father, a brother and sister are introduced to their new sibling by their foster mother, only to learn that she has a terrifying secret.',
+      poster_path: '/tObSf1VzzHt9xB0csanFtb3DRjf.jpg',
+      media_type: 'movie',
+      original_language: 'en',
+      genre_ids: [Array
+    ],
+      popularity: 102.9177,
+      release_date: '2025-05-28',
+      video: false,
+      vote_average: 7.423,
+      vote_count: 326
+}
