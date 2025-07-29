@@ -1,0 +1,160 @@
+/*                                                     fonts                                              */
+
+/*poppins and Inter */
+/* importing it via Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*popins font*/
+.poppins-font {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*inter font*/
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* giveing it classes so it can be useed in httml eazily by typeing the fonts name in class*/
+.inter {
+    font-family: "Inter";
+}
+
+.poppins {
+    font-family: "Poppins";
+}
+
+
+/*                                                 pre set  colors                              */  
+/*                                               Mainly used colors                            */
+
+/*  background  */
+
+.bg-green {
+    background-color: #299D91;
+}
+
+.bg-darkblack{
+    background-color: #191919;
+}
+
+.bg-blackgray{
+    background-color: #525256;
+}
+
+.darkgray{
+    background-color: #666666;
+}
+
+.bg-gray{
+    background-color: #878787;
+}
+
+.bg-lightgray{
+    background-color: #9F9F9F;
+}
+
+.bg-graywhite{
+    background-color: #E8E8E8;
+}
+
+.bg-white-set{
+    background-color: #F3F3F3;
+}
+
+
+/* text  */
+
+.text-green{
+    color: #299D91;
+}
+
+.text-darkblack{
+    color: #191919;
+}
+
+.text-blackgray{
+    color: #525256;
+}
+
+.text-darkgray{
+    color: #666666;
+}
+
+.text-gray{
+    color: #878787;
+}
+
+.text-lightgray{
+    color: #9F9F9F;
+}
+
+.text-graywhite{
+    color: #E8E8E8;
+}
+
+.text-white-set{
+    color: F3F3F3;
+}
+/*                                                  pre set special colors                             */
+/*                                                    rarely used colors                        */
+
+
+
+/*background*/
+.bg-speciallightgreen{
+    background-color: #4DAF6E;
+}
+
+.bg-specialgray{
+    background-color: #D2D2D2;
+    opacity: 25%;
+}
+
+.bg-speciallightgray{
+    background-color: #FFFFFF;
+    opacity: 70%;
+}
+.bg-specialdarkgray{
+    background-color: #FFFFFF;
+    opacity: 80%;
+}
+
+.bg-speciawhite{
+    background-color: #FFFFFF;
+    opacity: 8%;
+}
+
+
+
+
+/*text*/
+.text-speciallightgreen {
+    color: #4DAF6E;
+}
+
+.text-specialred{
+    color: #E73D1C;
+}
+
+.text-specialgray{
+    color: #D2D2D2;
+    opacity: 25%;
+}
+
+.text-speciallightgray{
+    color: #FFFFFF;
+    opacity: 70%;
+}
+
+.text-specialdarkgray{
+    color : #FFFFFF;
+    opacity: 80%;
+}
