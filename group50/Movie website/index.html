@@ -11,26 +11,27 @@
 
 
 <body class="bg-gray-950 min-h-screen text-white ">
-    
-    
+
+
     <header class="bg-gray-900 px-4 py-3 flex items-center justify-between flex-wrap  max-w-screen backdrop-opacity-70">
 
-        
+
         <div class="text-2xl font-bold ">🎬 </div>
 
-        
+
         <div class="flex flex-row- max-w-max gap-2">
             <input type="text" placeholder="Search movies..."
                 class="rounded-md px-4 py-2 rounded-l-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
 
-            <button id="Search" class="px-4 py-2 rounded-r-md bg-indigo-600 text-white hover:bg-indigo-700 transition-colors rounded-md">
+            <button id="Search"
+                class="px-4 py-2 rounded-r-md bg-indigo-600 text-white hover:bg-indigo-700 transition-colors rounded-md">
                 Search
             </button>
         </div>
-        
+
         <div class="flex items-center space-x-3 mt-3 md:mt-0">
 
-            
+
             <div class="relative group">
                 <button class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-md">
                     🎭 Genres
@@ -39,40 +40,41 @@
 
                 <div
                     class="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
-                    <button class="w-full text-left px-4 py-2 hover:bg-gray-100">Action</button>
-                    <button class="w-full text-left px-4 py-2 hover:bg-gray-100">Comedy</button>
-                    <button class="w-full text-left px-4 py-2 hover:bg-gray-100">Drama</button>
-                    <button class="w-full text-left px-4 py-2 hover:bg-gray-100">Horror</button>
+                    <button id="genre-action" class="w-full text-left px-4 py-2 hover:bg-gray-100">Action</button>
+                    <button id="genre-comedy" class="w-full text-left px-4 py-2 hover:bg-gray-100">Comedy</button>
+                    <button id="genre-drama" class="w-full text-left px-4 py-2 hover:bg-gray-100">Drama</button>
+                    <button id="genre-horror" class="w-full text-left px-4 py-2 hover:bg-gray-100">Horror</button>
                 </div>
             </div>
 
-            
+
             <button id="top-imdb"
                 class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 rounded-md">
                 ⭐ Top IMDb
             </button>
 
-           
-            <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-md">
+
+            <button id="georgian-movies" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-md">
                 🇬🇪 Georgian Movies
             </button>
         </div>
     </header>
     <main class="p-6 ">
 
-        
+
         <h2 class="text-2xl text-center md:text-3xl font-bold text-white mb-8">
             🔥 Popular This Week
         </h2>
 
-       
+
         <div id="MovieRow" class="flex flex-wrap items-center justify-center gap-8 overflow-x-auto max-w-screen">
 
         </div>
 
-        
-        <section id="Main movies">
-
+        <h2 class=" mt-3 mb-3.5 text-2xl text-center md:text-3xl font-bold text-white mb-8">
+            🔥 Movies...
+        </h2>
+        <section id="Main movies" class="p-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-8">
         </section>
 
     </main>

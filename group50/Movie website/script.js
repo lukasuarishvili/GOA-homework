@@ -98,7 +98,7 @@ async function getFilmByName() {
 }
 
 async function getMovesByGenries(params) {
-    
+
 }
 
 searchButton.addEventListener("click", getFilmByName)
@@ -107,3 +107,74 @@ searchButton.addEventListener("click", getFilmByName)
 getPopularFilms()
 
 
+
+async function getMoviesByGenre(genreId) {
+    const response = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${TMDBKEY}&with_genres=${genreId}`);
+    const data = await response.json();
+
+    
+    mainMovies.innerHTML = "";
+
+    data.results.forEach(movie => {
+        const card = document.createElement("div");
+        card.className = "bg-gray-800 rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform";
+
+        const img = document.createElement("img");
+        img.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+        img.alt = movie.title;
+        img.className = "w-full h-64 object-cover";
+
+        const title = document.createElement("h3");
+        title.textContent = movie.title;
+        title.className = "text-white font-semibold text-sm p-2 truncate";
+
+        card.appendChild(img);
+        card.appendChild(title);
+        mainMovies.appendChild(card);
+    });
+}
+// ქართული ფილმების
+async function getGeorgianMovies() {
+    const response = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${TMDBKEY}&with_original_language=ka`);
+    const data = await response.json();
+
+    
+    mainMovies.innerHTML = "";
+
+    data.results.forEach(movie => {
+        const card = document.createElement("div");
+        card.className = "bg-gray-800 rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform";
+
+        const img = document.createElement("img");
+        img.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+        img.alt = movie.title;
+        img.className = "w-full h-64 object-cover";
+
+        const title = document.createElement("h3");
+        title.textContent = movie.title;
+        title.className = "text-white font-semibold text-sm p-2 truncate";
+
+        card.appendChild(img);
+        card.appendChild(title);
+        mainMovies.appendChild(card);
+    });
+}
+
+
+document.getElementById("genre-action").addEventListener("click", () => {
+    getMoviesByGenre(28); 
+});
+
+document.getElementById("genre-comedy").addEventListener("click", () => {
+    getMoviesByGenre(35); 
+});
+
+document.getElementById("genre-drama").addEventListener("click", () => {
+    getMoviesByGenre(18); 
+});
+
+document.getElementById("genre-horror").addEventListener("click", () => {
+    getMoviesByGenre(27); 
+});
+
+document.getElementById("georgian-movies").addEventListener("click", getGeorgianMovies);
