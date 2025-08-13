@@ -1,0 +1,11 @@
+#ჯგუფი 50-ის პაკეჯები
+group50/node_modules/
+group50/src/
+group50/Tailwind/
+group50/.vscode/
+group50/.idea/
+group50/package.json
+group50/package-lock.json
+#მთავარი პოლდერის vscode და IDE- ის ფოლდერები
+.vscode/
+.idea/
