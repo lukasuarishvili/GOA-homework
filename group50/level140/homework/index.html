@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script crossorigin src="https://unpkg.com/react@16.0/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16.0 /umd/react-dom.development.js"></script>
+</head>
+
+<body class="flex flex-col gap-4">
+    <!-- Reqct არის ჯავასკრიპტის framework ანუ უკვე გამზადებული პროგრამა/software რომელიც დევლოპერს ეხმარება საქმის გაადვილებაში -->
+    <!-- როგორც თქვა გაბრიელმა React Number 1 -->
+
+    <header class="w-full flex flex-col justify-center items-center gap-12  p-6 ">
+        <div id="title" class=""></div>
+        <div id="Main_img" class="">
+
+        </div>
+    </header>
+    <section class="p-9 ">
+        <div id="list_title">
+
+        </div>
+        <ul class="flex flex-row gap-3.5">
+
+        </ul>
+    </section>
+
+
+    <script>
+        const images=[
+            "https://server5.intermedia.ge/article_images/small/202211/2022111519452476235.jpg",
+
+        ]
+        const title = React.createElement(
+            'h1',
+            { className: "font-bold text-9xl " },
+            "დათა თუთაშხია");
+
+        const MainImg = React.createElement(
+            'img',
+            {
+                src: "https://cdn.1tv.ge/app/uploads/2018/06/e-1529045757.png",
+                className: "h-[500px] w-[700px] rounded-xl"
+            },
+            null
+        )
+
+        const list_title = React.createElement(
+            'h4',
+            { className: "font-bold text-5xl " },
+            "პერსონაჟები:");
+
+        
+
+        ReactDOM.render(
+            title, // გადაეცემა ის ელემენტი რომლის რენდერიც გვინდა საიტზე 
+
+            document.getElementById("title") // ეს გადაცემული ელემენტის ადგილი არის (ანუ სად ჩასვასლ)
+        )
+        ReactDOM.render(
+            MainImg,
+
+            document.getElementById("Main_img")
+        )
+
+         ReactDOM.render(
+            list_title,
+
+            document.getElementById("list_title")
+        )
+
+        
+
+
+    </script>
+</body>
+
+</html>
