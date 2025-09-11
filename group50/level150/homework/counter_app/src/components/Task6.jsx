@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
+
 function Task6() {
+
     let [NUM, chageNum] = useState(1)
 
     function double() {

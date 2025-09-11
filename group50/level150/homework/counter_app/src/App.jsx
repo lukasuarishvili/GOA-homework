@@ -10,11 +10,11 @@ function App() {
   function increment() {
     // counter+=1 ეს ცუდია? რატომ?
 
-    setcounter(num => num + 1)
+    setcounter(counter+1)
   };
 
   function decrement() {
-    setcounter(num => num - 1)
+    setcounter(counter-2)
   };
   function Reset() {
 

@@ -11,6 +11,7 @@ export default function CaseChanger() {
             checkWord(word.toUpperCase())
         }
     }
+    
     return (
         <div className='flex flex-col items-center justify-center p-3 border-4 gap-2.5'>
             <h1 className='font-semibold text-2xl'>{word}</h1>
