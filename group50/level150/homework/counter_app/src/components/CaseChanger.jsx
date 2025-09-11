@@ -12,9 +12,9 @@ export default function CaseChanger() {
         }
     }
     return (
-        <div className='flex flex-col items-center p-2 border-4 gap-2.5'>
+        <div className='flex flex-col items-center justify-center p-3 border-4 gap-2.5'>
             <h1 className='font-semibold text-2xl'>{word}</h1>
-            <button className=' py-2 px-3  bg-amber-400 rounded-2xl' type="button" onClick={changeCase}>chage case</button>
+            <button className='px-2 py-1.5 border-0 bg-yellow-400 hover:bg-yellow-500 rounded-2xl' type="button" onClick={changeCase}>chage case</button>
         </div>
     )
 }
