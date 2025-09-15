@@ -7,17 +7,21 @@ function Mood() {
 
     const Mood = {
         "happy": "😀",
-        "sad ": "🙁",
-        "scared ": "😰",
+        "sad": "🙁",
+        "scared": "😰",
         "angry": " 😡",
         "Unknown": "🤷‍♂️"
     };
 
     function displayMood(event) {
         event.preventDefault();
-        let key=event.target.mood.value.trim()
+        let key = event.target.mood.value.trim()
 
-        setmood(mood.key)
+        setmood(Mood[key])
+        if (Mood[key] === undefined) {
+            setmood("🤷‍♂️")
+        }
+        event.target.mood.value=""
     };
 
     return (
@@ -28,7 +32,7 @@ function Mood() {
                 <button type="submit">submit</button>
             </form>
 
-            <h4>{mood}</h4>
+            <h4 className='text-2xl'>{mood}</h4>
         </div>
     )
 };
