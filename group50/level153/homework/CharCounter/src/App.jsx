@@ -1,35 +1,32 @@
-import { useState } from 'react'
-
+import { useState } from "react";
 
 function App() {
-
   let [characterCount, setcharacterCount] = useState(0);
+  let [text, settext] = useState("");
 
-  function checkcharacter(event) {
+  function reset() {
+    setcharacterCount(0);
+    settext("");
+  }
+  function checkCharacters(event) {
 
-    let charstring = event.target.character.value
-    setcharacterCount(charstring.length)
+    setcharacterCount(event.target.value.length)
+
   }
 
-  function reset(event) {
-    setcharacterCount(0)
-    event.preventDefault()
-    event.target.character.textContent = ""
-
-  }
-  // can stop the useer from typeing any more  and the reset button 
   return (
     <>
-      <form onChange={checkcharacter}>
-        <textarea name="character"  ></textarea>
-        <button onClick={reset} >reset</button>
+      <form >
+        <textarea onChange={checkCharacters} maxLength={100} >
+
+        </textarea>
+
+        <button onClick={reset}>reset</button>
       </form>
 
-
-      <p>Total Characters: {characterCount > 100 ? "not any more" : characterCount}</p>
-
+      <h1>Total Characters: {characterCount >= 100 ? "You Reached Character Limit" : characterCount}</h1>
     </>
   )
 }
 
-export default App
+export default App;
