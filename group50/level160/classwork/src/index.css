@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+    --color-Header: hsl(243, 21%, 16%)
+}
