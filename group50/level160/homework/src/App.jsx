@@ -5,7 +5,11 @@ import cardFront from '../src/assets/images/bg-card-front.png'
 
 
 function App() {
-
+  let [formdata, setformdata]=useState({
+    CardHolderName:"test name",
+    CardNumber:" test num123123"   ,
+    Cvc:"12/13"
+  })
 
 
   function handleChange(event) {
@@ -13,10 +17,25 @@ function App() {
   }
   return (
     <>
-      <div className='h-screen w-full flex justify-center items-center gap-15'>
+      <div className='h-screen w-full flex justify-center items-center gap-15 px-2'>
         <div className='flex flex-col gap-5 w-fit'>
-          <img src={cardFront} alt="" className='pr-13' />
-          <img src={cardBack} alt="Back of the card" className='pl-13' />
+          <div className='relative max-h-fit  max-w-fit flex justify-center items-center'>
+            <img src={cardFront} alt="" className='' />
+            <div className='absolute flex flex-col'>
+              <h2 className='text-white'>{formdata.CardNumber}</h2> 
+              </div>
+              <div className='w-full flex justify-between'>
+                <p className='  text-white'>{formdata.CardHolderName}</p>
+              </div>
+            
+           
+            
+          </div>
+          
+          <div>
+             <img src={cardBack} alt="Back of the card" className='' />
+          </div>
+         
         </div>
         <div className='h-fit w-fit px-2'>
           <form className='flex flex-col w-96 gap-2' >
