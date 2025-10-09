@@ -5,15 +5,17 @@ import cardFront from '../src/assets/images/bg-card-front.png'
 
 
 function App() {
-  let [formdata, setformdata]=useState({
-    CardHolderName:"test name",
-    CardNumber:" test num123123"   ,
-    Cvc:"12/13"
+  let [formdata, setformdata] = useState({
+    CardHolderName: "",
+    CardNumber: "",
+    Cvc: ""
   })
 
 
   function handleChange(event) {
 
+    const { name, value } = event.target;
+    setformdata({ ...formdata, [name]: value })
   }
   return (
     <>
@@ -22,20 +24,21 @@ function App() {
           <div className='relative max-h-fit  max-w-fit flex justify-center items-center'>
             <img src={cardFront} alt="" className='' />
             <div className='absolute flex flex-col'>
-              <h2 className='text-white'>{formdata.CardNumber}</h2> 
-              </div>
+              <h2 className='text-white'>{formdata.CardNumber}</h2>
               <div className='w-full flex justify-between'>
                 <p className='  text-white'>{formdata.CardHolderName}</p>
               </div>
-            
-           
-            
+            </div>
+
+
+
+
           </div>
-          
+
           <div>
-             <img src={cardBack} alt="Back of the card" className='' />
+            <img src={cardBack} alt="Back of the card" className='' />
           </div>
-         
+
         </div>
         <div className='h-fit w-fit px-2'>
           <form className='flex flex-col w-96 gap-2' >
@@ -44,11 +47,11 @@ function App() {
               <label className='text-black font-semibold' > Cardholder Name</label>
               <input
                 type="text"
+                name='CardHolderName'
+                value={formdata.CardHolderName}
                 placeholder='e.g. Jane Appleseed'
                 className='w-full p-2 text-Gray400 border rounded'
-                onChange={(Event => {
-                  console.log(Event)
-                })} />
+                onChange={handleChange} />
             </div>
 
 
@@ -56,11 +59,11 @@ function App() {
               <label className='text-black font-semibold ' >Card Number</label>
               <input
                 type="text"
+                name='CardNumber'
+                value={formdata.CardNumber}
                 placeholder='e.g. 1234 5678 9123 0000'
                 className='w-full p-2  text-Gray400 border rounded '
-                onChange={Event=>{
-                  console.log(Event)
-                }}
+                onChange={handleChange}
               />
 
             </div>
@@ -75,7 +78,14 @@ function App() {
               </div>
               <div className=' w-full flex flex-col gap-1  '>
                 <label className='text-black font-semibold' >CVC</label>
-                <input type="text" placeholder='e.g. 123' className='p-2  border rounded w-full' />
+                <input
+                  type="text"
+                  name='Cvc'
+                  value={formdata.Cvc}
+                  onChange={handleChange}
+                  placeholder='e.g. 123'
+                  className='p-2  border rounded w-full'
+                />
               </div>
             </div>
 
