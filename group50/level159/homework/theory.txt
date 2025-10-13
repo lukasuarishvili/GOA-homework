@@ -1,0 +1,42 @@
+** Level 159: **
+```
+1) რა არის useEffect და რისთვის ვიყენებთ მას React-ში?
+
+    useEffect არის ერთერთი კაუჭი React-ში 
+    მას გამოვიყენებთ state-ზე მანიპილაციისთვის როცა გვინდა
+    
+2) როდის შესრულდება useEffect-ის შიგნით დაწერილი კოდი?
+    ეს შეილე იყოს:
+        კომპონენტის რენდერისას ,
+        state-ის ცვლილებისას ,
+        ან კომპონენტის mount-ისას
+3) რისთვის ვიყენებთ მეორე არგუმენტს useEffect(() => {}, [])?
+
+    პირველი არგუმენტი არის ფუნქცია რომელიც შესრულდება ,
+    მეორე არგუმენტის არის იმისთვის თუ დავადგინოთ როდის გვინდა effect-ის (ფუნქციის) გამოძახება
+    მაგალიტათ:
+        useEffect(() => {}) ეს არის ყოველ დარენდერებაზე ,
+        useEffect(() => {},[]) ეს არის mount-ზე (ანუ როცა პირველად გამოჩნდება),
+        useEffect(() => {},[]) აბ გადვცეთ არგუმენტი რომელიც არის state-ი და როცა მისი მნიშვნელობა შეიცვლება ის ეს ფუნქცია გამოვიძახოთ
+        
+4) შექმენით ორი state: email და password
+შექმენით ორი input -> ერთი მეილის მეორე პაროლის
+შექმენით useEffect, რომელიც ორიცე state ს თვალს ადევნებს
+თუ email შეიცავს "@" და password.length >= 6 -> console.log("Valid Credentials")
+სხვა შემთხვევაში -> console.log("Invalid email or password")
+
+5) შექმენით ორი state: count და isActive (boolean)
+ერთი ღილაკით გაზარდეთ count, მეორე ღილაკით შეცვალეთ isActive
+შექმენით useEffect, რომელიც რეაგირებს ორივე state-ზე
+თუ count > 10 და isActive === true -> console.log("High activity")
+თუ count <= 10 და isActive === false -> console.log("Low activity")
+სხვა შემთხვევაში -> console.log("Normal state")
+
+6) შექმენით ორი state: temperature (რიცხვი), city (სტრინგი)
+შექმენით ორი input -> ერთში ტემპერატურას შევიყვანთ მეორეში ქალაქის სახელს
+შექმენით useEffect, რომელიც ორიცე state ს თვალს ადევნებს
+თუ temperature > 35 და city.length >= 3 -> console.log("Heat Alert in", city)
+თუ temperature < 5 -> console.log("Cold Alert in", city)
+სხვა შემთხვევაში -> console.log("Weather normal")
+```
+** წარმატებები! **
