@@ -1,12 +1,12 @@
 // components 
-import Mama from './components/mama'
+import Tree from './components/Tree'
 
 
 function App() {
 
   return (
     <>
-      <Mama></Mama>
+      <Tree></Tree>
     </>
   )
 }
