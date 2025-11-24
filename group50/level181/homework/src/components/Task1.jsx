@@ -2,9 +2,21 @@ import { useEffect, useRef } from "react"
 // 1) შექმენით button და ტექსტი. როცა ღილაკს დააწვები, ტექსტის ფერი შეიცვალოს.
 // გამოიყენეთ useRef - ი ტექსტის ელემენტზე წვდომისთვის.
 
+function rame() {
+    let cvladi = useRef();
+
+    return cvladi
+}
+
 function Task1() {
 
-    let textColor = useRef("blue");
+
+
+    // (textColorprops.children.props.children).apendChild()
+
+    // console.log(textColor.current)
+
+    console.log(rame())
 
 
     function changeColor() {
@@ -19,6 +31,9 @@ function Task1() {
 
 
     return (
+
+
+
 
         <>
 
@@ -39,4 +54,4 @@ function Task1() {
 
 }
 
-export default Task1
+export { Task1, rame }

@@ -3,10 +3,12 @@ import { useRef } from "react"
 // გამოიყენეთ useRef  input-ის წვდომისთვის
 
 
+
+
 function Task2() {
 
     let input = useRef("");
-
+   
 
     function handlebutton() {
         console.log(input.current)
@@ -19,8 +21,11 @@ function Task2() {
     }
 
 
+
     return (
-        <>
+
+
+        <div >
             <div className="flex gap-3 ">
                 <input
                     type="text"
@@ -35,8 +40,11 @@ function Task2() {
                     Console
                 </button>
             </div>
+        </div>
 
-        </>
+
+
+
     )
 }
 

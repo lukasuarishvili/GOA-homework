@@ -3,14 +3,16 @@ import React, { useRef } from 'react'
 
 // 3) შექმენით ტექსტი და button. ღილაკზე დაჭერისას ტექსტი გაჩნდეს და გაქრეს. გამოიყენეთ useRef
 function Task3() {
-    let visable = useRef(true)
+    let visable = useRef()
+
 
     function handleClick() {
+        
         console.log(visable.current)
-        if (visable.current) {
-            visable.current = false
+        if (visable.current.style.display == "none") {
+            visable.current.style.display = "block"
         } else {
-            visable.current = true
+            visable.current.style.display = "none"
         }
     }
 
@@ -19,7 +21,7 @@ function Task3() {
         <>
             {
                 visable.current ?
-                    <p className="text-4xl font-bold ">გაჩნდა გაქრა ტექსტი</p>
+                    <p ref={visable} className="text-4xl font-bold ">გაჩნდა გაქრა ტექსტი</p>
                     :
                     <p></p>
             }
@@ -29,7 +31,7 @@ function Task3() {
                 onClick={handleClick}
             >
                 {
-                    visable.current ? "გააქრე" : "გააჩინე" 
+                    visable.current.style.display == "none" ? "გააჩინე" : "გააქრე"
                 }
             </button>
 
