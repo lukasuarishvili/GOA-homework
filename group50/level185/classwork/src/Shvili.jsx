@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react'
 
-const Shvili = React.memo(function Shvili({ onClick }) {
-
-
-
+const Shvili = React.memo(function Shviln
     console.log("shvili rend")
 
 
