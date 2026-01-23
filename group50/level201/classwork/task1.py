@@ -1,6 +1,6 @@
 print(" "*60 +"whelcome to the bank")
 
-chose= input(" "*50 +"do you want to register or login ? ").strip()
+chose= input(" "*52 +"do you want to register or login ? ").strip()
 
 def register():
     try:
@@ -11,7 +11,7 @@ def register():
         register()
 
     with open("level201/classwork/text1.txt", "w") as users:
-        users.write(f"{username}  password:{password} \n")
+        users.write(f"username:{username}  password:{password} \n")
 
 def Login():
     try:
